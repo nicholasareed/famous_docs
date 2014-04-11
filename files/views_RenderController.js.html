@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>views/RenderController.js</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+            
+                <h1><img src="../assets/css/logo.png" title=""></h1>
+            
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em>API Docs for: </em>
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+    <h2 class="off-left">APIs</h2>
+    <div id="api-tabview" class="tabview">
+        <ul class="tabs">
+            <li><a href="#api-classes">Classes</a></li>
+            <li><a href="#api-modules">Modules</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+        </div>
+
+        <div id="api-tabview-panel">
+            <ul id="api-classes" class="apis classes">
+            
+                <li><a href="../classes/Body.html">Body</a></li>
+            
+                <li><a href="../classes/CachedMap.html">CachedMap</a></li>
+            
+                <li><a href="../classes/CanvasSurface.html">CanvasSurface</a></li>
+            
+                <li><a href="../classes/Circle.html">Circle</a></li>
+            
+                <li><a href="../classes/Collision.html">Collision</a></li>
+            
+                <li><a href="../classes/Constraint.html">Constraint</a></li>
+            
+                <li><a href="../classes/ContainerSurface.html">ContainerSurface</a></li>
+            
+                <li><a href="../classes/Context.html">Context</a></li>
+            
+                <li><a href="../classes/Curve.html">Curve</a></li>
+            
+                <li><a href="../classes/Deck.html">Deck</a></li>
+            
+                <li><a href="../classes/Distance.html">Distance</a></li>
+            
+                <li><a href="../classes/Drag.html">Drag</a></li>
+            
+                <li><a href="../classes/Draggable.html">Draggable</a></li>
+            
+                <li><a href="../classes/EdgeSwapper.html">EdgeSwapper</a></li>
+            
+                <li><a href="../classes/ElementAllocator.html">ElementAllocator</a></li>
+            
+                <li><a href="../classes/Engine.html">Engine</a></li>
+            
+                <li><a href="../classes/Entity.html">Entity</a></li>
+            
+                <li><a href="../classes/EventArbiter.html">EventArbiter</a></li>
+            
+                <li><a href="../classes/EventEmitter.html">EventEmitter</a></li>
+            
+                <li><a href="../classes/EventFilter.html">EventFilter</a></li>
+            
+                <li><a href="../classes/EventHandler.html">EventHandler</a></li>
+            
+                <li><a href="../classes/EventMapper.html">EventMapper</a></li>
+            
+                <li><a href="../classes/Fader.html">Fader</a></li>
+            
+                <li><a href="../classes/Flipper.html">Flipper</a></li>
+            
+                <li><a href="../classes/Force.html">Force</a></li>
+            
+                <li><a href="../classes/GenericSync.html">GenericSync</a></li>
+            
+                <li><a href="../classes/GridLayout.html">GridLayout</a></li>
+            
+                <li><a href="../classes/Group.html">Group</a></li>
+            
+                <li><a href="../classes/HeaderFooterLayout.html">HeaderFooterLayout</a></li>
+            
+                <li><a href="../classes/ImageSurface.html">ImageSurface</a></li>
+            
+                <li><a href="../classes/InputSurface.html">InputSurface</a></li>
+            
+                <li><a href="../classes/KeyCodes.html">KeyCodes</a></li>
+            
+                <li><a href="../classes/Lightbox.html">Lightbox</a></li>
+            
+                <li><a href="../classes/Matrix.html">Matrix</a></li>
+            
+                <li><a href="../classes/Modifier.html">Modifier</a></li>
+            
+                <li><a href="../classes/ModifierChain.html">ModifierChain</a></li>
+            
+                <li><a href="../classes/MouseSync.html">MouseSync</a></li>
+            
+                <li><a href="../classes/MultipleTransition.html">MultipleTransition</a></li>
+            
+                <li><a href="../classes/NavigationBar.html">NavigationBar</a></li>
+            
+                <li><a href="../classes/OptionsManager.html">OptionsManager</a></li>
+            
+                <li><a href="../classes/Particle.html">Particle</a></li>
+            
+                <li><a href="../classes/PhysicsEngine.html">PhysicsEngine</a></li>
+            
+                <li><a href="../classes/PinchSync.html">PinchSync</a></li>
+            
+                <li><a href="../classes/Quaternion.html">Quaternion</a></li>
+            
+                <li><a href="../classes/Random.html">Random</a></li>
+            
+                <li><a href="../classes/RenderController.html">RenderController</a></li>
+            
+                <li><a href="../classes/RenderNode.html">RenderNode</a></li>
+            
+                <li><a href="../classes/Repulsion.html">Repulsion</a></li>
+            
+                <li><a href="../classes/RotateSync.html">RotateSync</a></li>
+            
+                <li><a href="../classes/RotationalDrag.html">RotationalDrag</a></li>
+            
+                <li><a href="../classes/RotationalSpring.html">RotationalSpring</a></li>
+            
+                <li><a href="../classes/ScaleSync.html">ScaleSync</a></li>
+            
+                <li><a href="../classes/Scene.html">Scene</a></li>
+            
+                <li><a href="../classes/ScrollContainer.html">ScrollContainer</a></li>
+            
+                <li><a href="../classes/Scroller.html">Scroller</a></li>
+            
+                <li><a href="../classes/ScrollSync.html">ScrollSync</a></li>
+            
+                <li><a href="../classes/Scrollview.html">Scrollview</a></li>
+            
+                <li><a href="../classes/Snap.html">Snap</a></li>
+            
+                <li><a href="../classes/SnapTransition.html">SnapTransition</a></li>
+            
+                <li><a href="../classes/SpecParser.html">SpecParser</a></li>
+            
+                <li><a href="../classes/Spring.html">Spring</a></li>
+            
+                <li><a href="../classes/SpringTransition.html">SpringTransition</a></li>
+            
+                <li><a href="../classes/StateModifier.html">StateModifier</a></li>
+            
+                <li><a href="../classes/Surface.html">Surface</a></li>
+            
+                <li><a href="../classes/SymplecticEuler.html">SymplecticEuler</a></li>
+            
+                <li><a href="../classes/TabBar.html">TabBar</a></li>
+            
+                <li><a href="../classes/Timer.html">Timer</a></li>
+            
+                <li><a href="../classes/TouchSync.html">TouchSync</a></li>
+            
+                <li><a href="../classes/TouchTracker.html">TouchTracker</a></li>
+            
+                <li><a href="../classes/Transform.html">Transform</a></li>
+            
+                <li><a href="../classes/Transitionable.html">Transitionable</a></li>
+            
+                <li><a href="../classes/TransitionableTransform.html">TransitionableTransform</a></li>
+            
+                <li><a href="../classes/TweenTransition.html">TweenTransition</a></li>
+            
+                <li><a href="../classes/TwoFingerSync.html">TwoFingerSync</a></li>
+            
+                <li><a href="../classes/Utilities.html">Utilities</a></li>
+            
+                <li><a href="../classes/Utility.html">Utility</a></li>
+            
+                <li><a href="../classes/Vector.html">Vector</a></li>
+            
+                <li><a href="../classes/VectorField.html">VectorField</a></li>
+            
+                <li><a href="../classes/VideoSurface.html">VideoSurface</a></li>
+            
+                <li><a href="../classes/View.html">View</a></li>
+            
+                <li><a href="../classes/ViewSequence.html">ViewSequence</a></li>
+            
+                <li><a href="../classes/Wall.html">Wall</a></li>
+            
+                <li><a href="../classes/Walls.html">Walls</a></li>
+            
+                <li><a href="../classes/WallTransition.html">WallTransition</a></li>
+            
+            </ul>
+
+            <ul id="api-modules" class="apis modules">
+            
+            </ul>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+        Show:
+        <label for="api-show-inherited">
+            <input type="checkbox" id="api-show-inherited" checked>
+            Inherited
+        </label>
+
+        <label for="api-show-protected">
+            <input type="checkbox" id="api-show-protected">
+            Protected
+        </label>
+
+        <label for="api-show-private">
+            <input type="checkbox" id="api-show-private">
+            Private
+        </label>
+        <label for="api-show-deprecated">
+            <input type="checkbox" id="api-show-deprecated">
+            Deprecated
+        </label>
+
+    </div>
+
+
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+                        <h1 class="file-heading">File: views/RenderController.js</h1>
+
+<div class="file">
+    <pre class="code prettyprint linenums">
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/.
+ *
+ * Owner: felix@famo.us
+ * @license MPL 2.0
+ * @copyright Famous Industries, Inc. 2014
+ */
+
+define(function(require, exports, module) {
+    var Modifier = require(&#x27;famous/core/Modifier&#x27;);
+    var RenderNode = require(&#x27;famous/core/RenderNode&#x27;);
+    var Transform = require(&#x27;famous/core/Transform&#x27;);
+    var Transitionable = require(&#x27;famous/transitions/Transitionable&#x27;);
+    var View = require(&#x27;famous/core/View&#x27;);
+
+    /**
+     * A dynamic view that can show or hide different renerables with transitions.
+     * @class RenderController
+     * @constructor
+     * @param {Options} [options] An object of configurable options.
+     * @param {Transition} [inTransition=true] The transition in charge of showing a renderable.
+     * @param {Transition} [outTransition=true]  The transition in charge of removing your previous renderable when
+     * you show a new one, or hiding your current renderable.
+     * @param {Boolean} [overlap=true] When showing a new renderable, overlap determines if the
+      out transition of the old one executes concurrently with the in transition of the new one,
+       or synchronously beforehand.
+     */
+    function RenderController(options) {
+        View.apply(this, arguments);
+
+        this._showing = -1;
+        this._outgoingRenderables = [];
+        this._nextRenderable = null;
+
+        this._renderables = [];
+        this._nodes = [];
+        this._modifiers = [];
+        this._states = [];
+
+        this.inTransformMap = RenderController.DefaultMap.transform;
+        this.inOpacityMap = RenderController.DefaultMap.opacity;
+        this.inOriginMap = RenderController.DefaultMap.origin;
+        this.outTransformMap = RenderController.DefaultMap.transform;
+        this.outOpacityMap = RenderController.DefaultMap.opacity;
+        this.outOriginMap = RenderController.DefaultMap.origin;
+
+        this._output = [];
+    }
+    RenderController.prototype = Object.create(View.prototype);
+    RenderController.prototype.constructor = RenderController;
+
+    RenderController.DEFAULT_OPTIONS = {
+        inTransition: true,
+        outTransition: true,
+        overlap: true
+    };
+
+    RenderController.DefaultMap = {
+        transform: function() {
+            return Transform.identity;
+        },
+        opacity: function(progress) {
+            return progress;
+        },
+        origin: null
+    };
+
+    function _mappedState(map, state) {
+        return map(state.get());
+    }
+
+    /**
+     * As your RenderController shows a new renderable, it executes a transition in. This transition in
+     * will affect a default interior state and modify it as you bring renderables in and out. However, if you want to control
+     * the transform, opacity, and origin state yourself, you may call certain methods (such as inTransformFrom) to obtain state from an outside source,
+     * that may either be a function or a Famous transitionable. inTransformFrom sets the accessor for the state of
+     * the transform used in transitioning in renderables.
+     *
+     * @method inTransformFrom
+     * @param {Function|Transitionable} transform  A function that returns a transform from outside closure, or a
+     * a transitionable that manages a full transform (a sixteen value array).
+     * @chainable
+     */
+    RenderController.prototype.inTransformFrom = function inTransformFrom(transform) {
+        if (transform instanceof Function) this.inTransformMap = transform;
+        else if (transform &amp;&amp; transform.get) this.inTransformMap = transform.get.bind(transform);
+        else throw new Error(&#x27;inTransformFrom takes only function or getter object&#x27;);
+        //TODO: tween transition
+        return this;
+    };
+
+    /**
+     * inOpacityFrom sets the accessor for the state of the opacity used in transitioning in renderables.
+     * @method inOpacityFrom
+     * @param {Function|Transitionable} opacity  A function that returns an opacity from outside closure, or a
+     * a transitionable that manages opacity (a number between zero and one).
+     * @chainable
+     */
+    RenderController.prototype.inOpacityFrom = function inOpacityFrom(opacity) {
+        if (opacity instanceof Function) this.inOpacityMap = opacity;
+        else if (opacity &amp;&amp; opacity.get) this.inOpacityMap = opacity.get.bind(opacity);
+        else throw new Error(&#x27;inOpacityFrom takes only function or getter object&#x27;);
+        //TODO: tween opacity
+        return this;
+    };
+
+    /**
+     * inOriginFrom sets the accessor for the state of the origin used in transitioning in renderables.
+     * @method inOriginFrom
+     * @param {Function|Transitionable} origin A function that returns an origin from outside closure, or a
+     * a transitionable that manages origin (a two value array of numbers between zero and one).
+     * @chainable
+     */
+    RenderController.prototype.inOriginFrom = function inOriginFrom(origin) {
+        if (origin instanceof Function) this.inOriginMap = origin;
+        else if (origin &amp;&amp; origin.get) this.inOriginMap = origin.get.bind(origin);
+        else throw new Error(&#x27;inOriginFrom takes only function or getter object&#x27;);
+        //TODO: tween origin
+        return this;
+    };
+
+    /**
+     * outTransformFrom sets the accessor for the state of the transform used in transitioning out renderables.
+     * @method show
+     * @param {Function|Transitionable} transform  A function that returns a transform from outside closure, or a
+     * a transitionable that manages a full transform (a sixteen value array).
+     * @chainable
+     */
+    RenderController.prototype.outTransformFrom = function outTransformFrom(transform) {
+        if (transform instanceof Function) this.outTransformMap = transform;
+        else if (transform &amp;&amp; transform.get) this.outTransformMap = transform.get.bind(transform);
+        else throw new Error(&#x27;inTransformFrom takes only function or getter object&#x27;);
+        //TODO: tween transition
+        return this;
+    };
+
+    /**
+     * outOpacityFrom sets the accessor for the state of the opacity used in transitioning out renderables.
+     * @method inOpacityFrom
+     * @param {Function|Transitionable} opacity  A function that returns an opacity from outside closure, or a
+     * a transitionable that manages opacity (a number between zero and one).
+     * @chainable
+     */
+    RenderController.prototype.outOpacityFrom = function outOpacityFrom(opacity) {
+        if (opacity instanceof Function) this.outOpacityMap = opacity;
+        else if (opacity &amp;&amp; opacity.get) this.outOpacityMap = opacity.get.bind(opacity);
+        else throw new Error(&#x27;inOpacityFrom takes only function or getter object&#x27;);
+        //TODO: tween opacity
+        return this;
+    };
+
+    /**
+     * outOriginFrom sets the accessor for the state of the origin used in transitioning out renderables.
+     * @method inOriginFrom
+     * @param {Function|Transitionable} origin A function that returns an origin from outside closure, or a
+     * a transitionable that manages origin (a two value array of numbers between zero and one).
+     * @chainable
+     */
+    RenderController.prototype.outOriginFrom = function outOriginFrom(origin) {
+        if (origin instanceof Function) this.outOriginMap = origin;
+        else if (origin &amp;&amp; origin.get) this.outOriginMap = origin.get.bind(origin);
+        else throw new Error(&#x27;inOriginFrom takes only function or getter object&#x27;);
+        //TODO: tween origin
+        return this;
+    };
+
+    /**
+     * Show displays the targeted renderable with a transition and an optional callback to
+     * execute afterwards.
+     * @method show
+     * @param {Object} renderable The renderable you want to show.
+     * @param {Transition} [transition] Overwrites the default transition in to display the
+     * passed-in renderable.
+     * @param {function} [callback] Executes after transitioning in the renderable.
+     * @chainable
+     */
+    RenderController.prototype.show = function show(renderable, transition, callback) {
+        if (!renderable) {
+            return this.hide(callback);
+        }
+
+        if (transition instanceof Function) {
+            callback = transition;
+            transition = null;
+        }
+
+        if (this._showing &gt;= 0) {
+            if (this.options.overlap) this.hide(callback);
+            else {
+                if (this._nextRenderable) {
+                    this._nextRenderable = renderable;
+                }
+                else {
+                    this._nextRenderable = renderable;
+                    this.hide(function() {
+                        if (this._nextRenderable === renderable) this.show(this._nextRenderable, callback);
+                        this._nextRenderable = null;
+                    });
+                }
+                return;
+            }
+        }
+
+        var state = null;
+
+        // check to see if we should restore
+        var renderableIndex = this._renderables.indexOf(renderable);
+        if (renderableIndex &gt;= 0) {
+            this._showing = renderableIndex;
+            state = this._states[renderableIndex];
+            state.halt();
+
+            var outgoingIndex = this._outgoingRenderables.indexOf(renderable);
+            if (outgoingIndex &gt;= 0) this._outgoingRenderables.splice(outgoingIndex, 1);
+        }
+        else {
+            state = new Transitionable(0);
+
+            var modifier = new Modifier({
+                transform: this.inTransformMap ? _mappedState.bind(this, this.inTransformMap, state) : null,
+                opacity: this.inOpacityMap ? _mappedState.bind(this, this.inOpacityMap, state) : null,
+                origin: this.inOriginMap ? _mappedState.bind(this, this.inOriginMap, state) : null
+            });
+            var node = new RenderNode();
+            node.add(modifier).add(renderable);
+
+            this._showing = this._nodes.length;
+            this._nodes.push(node);
+            this._modifiers.push(modifier);
+            this._states.push(state);
+            this._renderables.push(renderable);
+        }
+
+        if (!transition) transition = this.options.inTransition;
+        state.set(1, transition, callback);
+    };
+
+    /**
+     * Hide hides the currently displayed renderable with an out transition.
+     * @method hide
+     * @param {Transition} [transition] Overwrites the default transition in to hide the
+     * currently controlled renderable.
+     * @param {function} [callback] Executes after transitioning out the renderable.
+     * @chainable
+     */
+    RenderController.prototype.hide = function hide(transition, callback) {
+        if (this._showing &lt; 0) return;
+        var index = this._showing;
+        this._showing = -1;
+
+        if (transition instanceof Function) {
+            callback = transition;
+            transition = undefined;
+        }
+
+        var node = this._nodes[index];
+        var modifier = this._modifiers[index];
+        var state = this._states[index];
+        var renderable = this._renderables[index];
+
+        modifier.transformFrom(this.outTransformMap ? _mappedState.bind(this, this.outTransformMap, state) : null);
+        modifier.opacityFrom(this.outOpacityMap ? _mappedState.bind(this, this.outOpacityMap, state) : null);
+        modifier.originFrom(this.outOriginMap ? _mappedState.bind(this, this.outOriginMap, state) : null);
+
+        if (this._outgoingRenderables.indexOf(renderable) &lt; 0) this._outgoingRenderables.push(renderable);
+
+        if (!transition) transition = this.options.outTransition;
+        state.halt();
+        state.set(0, transition, function(node, modifier, state, renderable) {
+            if (this._outgoingRenderables.indexOf(renderable) &gt;= 0) {
+                var index = this._nodes.indexOf(node);
+                this._nodes.splice(index, 1);
+                this._modifiers.splice(index, 1);
+                this._states.splice(index, 1);
+                this._renderables.splice(index, 1);
+                this._outgoingRenderables.splice(this._outgoingRenderables.indexOf(renderable), 1);
+
+                if (this._showing &gt;= index) this._showing--;
+            }
+            if (callback) callback.call(this);
+        }.bind(this, node, modifier, state, renderable));
+    };
+
+    /**
+     * Generate a render spec from the contents of this component.
+     *
+     * @private
+     * @method render
+     * @return {number} Render spec for this component
+     */
+    RenderController.prototype.render = function render() {
+        var result = this._output;
+        if (result.length &gt; this._nodes.length) result.splice(this._nodes.length);
+        for (var i = 0; i &lt; this._nodes.length; i++) {
+            result[i] = this._nodes[i].render();
+        }
+        return result;
+    };
+
+    module.exports = RenderController;
+});
+
+    </pre>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>

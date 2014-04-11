@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>physics/constraints/Walls.js</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+            
+                <h1><img src="../assets/css/logo.png" title=""></h1>
+            
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em>API Docs for: </em>
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+    <h2 class="off-left">APIs</h2>
+    <div id="api-tabview" class="tabview">
+        <ul class="tabs">
+            <li><a href="#api-classes">Classes</a></li>
+            <li><a href="#api-modules">Modules</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+        </div>
+
+        <div id="api-tabview-panel">
+            <ul id="api-classes" class="apis classes">
+            
+                <li><a href="../classes/Body.html">Body</a></li>
+            
+                <li><a href="../classes/CachedMap.html">CachedMap</a></li>
+            
+                <li><a href="../classes/CanvasSurface.html">CanvasSurface</a></li>
+            
+                <li><a href="../classes/Circle.html">Circle</a></li>
+            
+                <li><a href="../classes/Collision.html">Collision</a></li>
+            
+                <li><a href="../classes/Constraint.html">Constraint</a></li>
+            
+                <li><a href="../classes/ContainerSurface.html">ContainerSurface</a></li>
+            
+                <li><a href="../classes/Context.html">Context</a></li>
+            
+                <li><a href="../classes/Curve.html">Curve</a></li>
+            
+                <li><a href="../classes/Deck.html">Deck</a></li>
+            
+                <li><a href="../classes/Distance.html">Distance</a></li>
+            
+                <li><a href="../classes/Drag.html">Drag</a></li>
+            
+                <li><a href="../classes/Draggable.html">Draggable</a></li>
+            
+                <li><a href="../classes/EdgeSwapper.html">EdgeSwapper</a></li>
+            
+                <li><a href="../classes/ElementAllocator.html">ElementAllocator</a></li>
+            
+                <li><a href="../classes/Engine.html">Engine</a></li>
+            
+                <li><a href="../classes/Entity.html">Entity</a></li>
+            
+                <li><a href="../classes/EventArbiter.html">EventArbiter</a></li>
+            
+                <li><a href="../classes/EventEmitter.html">EventEmitter</a></li>
+            
+                <li><a href="../classes/EventFilter.html">EventFilter</a></li>
+            
+                <li><a href="../classes/EventHandler.html">EventHandler</a></li>
+            
+                <li><a href="../classes/EventMapper.html">EventMapper</a></li>
+            
+                <li><a href="../classes/Fader.html">Fader</a></li>
+            
+                <li><a href="../classes/Flipper.html">Flipper</a></li>
+            
+                <li><a href="../classes/Force.html">Force</a></li>
+            
+                <li><a href="../classes/GenericSync.html">GenericSync</a></li>
+            
+                <li><a href="../classes/GridLayout.html">GridLayout</a></li>
+            
+                <li><a href="../classes/Group.html">Group</a></li>
+            
+                <li><a href="../classes/HeaderFooterLayout.html">HeaderFooterLayout</a></li>
+            
+                <li><a href="../classes/ImageSurface.html">ImageSurface</a></li>
+            
+                <li><a href="../classes/InputSurface.html">InputSurface</a></li>
+            
+                <li><a href="../classes/KeyCodes.html">KeyCodes</a></li>
+            
+                <li><a href="../classes/Lightbox.html">Lightbox</a></li>
+            
+                <li><a href="../classes/Matrix.html">Matrix</a></li>
+            
+                <li><a href="../classes/Modifier.html">Modifier</a></li>
+            
+                <li><a href="../classes/ModifierChain.html">ModifierChain</a></li>
+            
+                <li><a href="../classes/MouseSync.html">MouseSync</a></li>
+            
+                <li><a href="../classes/MultipleTransition.html">MultipleTransition</a></li>
+            
+                <li><a href="../classes/NavigationBar.html">NavigationBar</a></li>
+            
+                <li><a href="../classes/OptionsManager.html">OptionsManager</a></li>
+            
+                <li><a href="../classes/Particle.html">Particle</a></li>
+            
+                <li><a href="../classes/PhysicsEngine.html">PhysicsEngine</a></li>
+            
+                <li><a href="../classes/PinchSync.html">PinchSync</a></li>
+            
+                <li><a href="../classes/Quaternion.html">Quaternion</a></li>
+            
+                <li><a href="../classes/Random.html">Random</a></li>
+            
+                <li><a href="../classes/RenderController.html">RenderController</a></li>
+            
+                <li><a href="../classes/RenderNode.html">RenderNode</a></li>
+            
+                <li><a href="../classes/Repulsion.html">Repulsion</a></li>
+            
+                <li><a href="../classes/RotateSync.html">RotateSync</a></li>
+            
+                <li><a href="../classes/RotationalDrag.html">RotationalDrag</a></li>
+            
+                <li><a href="../classes/RotationalSpring.html">RotationalSpring</a></li>
+            
+                <li><a href="../classes/ScaleSync.html">ScaleSync</a></li>
+            
+                <li><a href="../classes/Scene.html">Scene</a></li>
+            
+                <li><a href="../classes/ScrollContainer.html">ScrollContainer</a></li>
+            
+                <li><a href="../classes/Scroller.html">Scroller</a></li>
+            
+                <li><a href="../classes/ScrollSync.html">ScrollSync</a></li>
+            
+                <li><a href="../classes/Scrollview.html">Scrollview</a></li>
+            
+                <li><a href="../classes/Snap.html">Snap</a></li>
+            
+                <li><a href="../classes/SnapTransition.html">SnapTransition</a></li>
+            
+                <li><a href="../classes/SpecParser.html">SpecParser</a></li>
+            
+                <li><a href="../classes/Spring.html">Spring</a></li>
+            
+                <li><a href="../classes/SpringTransition.html">SpringTransition</a></li>
+            
+                <li><a href="../classes/StateModifier.html">StateModifier</a></li>
+            
+                <li><a href="../classes/Surface.html">Surface</a></li>
+            
+                <li><a href="../classes/SymplecticEuler.html">SymplecticEuler</a></li>
+            
+                <li><a href="../classes/TabBar.html">TabBar</a></li>
+            
+                <li><a href="../classes/Timer.html">Timer</a></li>
+            
+                <li><a href="../classes/TouchSync.html">TouchSync</a></li>
+            
+                <li><a href="../classes/TouchTracker.html">TouchTracker</a></li>
+            
+                <li><a href="../classes/Transform.html">Transform</a></li>
+            
+                <li><a href="../classes/Transitionable.html">Transitionable</a></li>
+            
+                <li><a href="../classes/TransitionableTransform.html">TransitionableTransform</a></li>
+            
+                <li><a href="../classes/TweenTransition.html">TweenTransition</a></li>
+            
+                <li><a href="../classes/TwoFingerSync.html">TwoFingerSync</a></li>
+            
+                <li><a href="../classes/Utilities.html">Utilities</a></li>
+            
+                <li><a href="../classes/Utility.html">Utility</a></li>
+            
+                <li><a href="../classes/Vector.html">Vector</a></li>
+            
+                <li><a href="../classes/VectorField.html">VectorField</a></li>
+            
+                <li><a href="../classes/VideoSurface.html">VideoSurface</a></li>
+            
+                <li><a href="../classes/View.html">View</a></li>
+            
+                <li><a href="../classes/ViewSequence.html">ViewSequence</a></li>
+            
+                <li><a href="../classes/Wall.html">Wall</a></li>
+            
+                <li><a href="../classes/Walls.html">Walls</a></li>
+            
+                <li><a href="../classes/WallTransition.html">WallTransition</a></li>
+            
+            </ul>
+
+            <ul id="api-modules" class="apis modules">
+            
+            </ul>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+        Show:
+        <label for="api-show-inherited">
+            <input type="checkbox" id="api-show-inherited" checked>
+            Inherited
+        </label>
+
+        <label for="api-show-protected">
+            <input type="checkbox" id="api-show-protected">
+            Protected
+        </label>
+
+        <label for="api-show-private">
+            <input type="checkbox" id="api-show-private">
+            Private
+        </label>
+        <label for="api-show-deprecated">
+            <input type="checkbox" id="api-show-deprecated">
+            Deprecated
+        </label>
+
+    </div>
+
+
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+                        <h1 class="file-heading">File: physics/constraints/Walls.js</h1>
+
+<div class="file">
+    <pre class="code prettyprint linenums">
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/.
+ *
+ * Owner: david@famo.us
+ * @license MPL 2.0
+ * @copyright Famous Industries, Inc. 2014
+ */
+
+define(function(require, exports, module) {
+    var Constraint = require(&#x27;./Constraint&#x27;);
+    var Wall = require(&#x27;./Wall&#x27;);
+    var Vector = require(&#x27;famous/math/Vector&#x27;);
+
+    /**
+     *  Walls combines one or more Wall primitives and exposes a simple API to
+     *  interact with several walls at once. A common use case would be to set up
+     *  a bounding box for a physics body, that would collide with each side.
+     *
+     *  @class Walls
+     *  @constructor
+     *  @extends Constraint
+     *  @uses Wall
+     *  @param options {Object}
+     */
+    function Walls(options) {
+        this.options = Object.create(Walls.DEFAULT_OPTIONS);
+        if (options) this.setOptions(options);
+        _createComponents.call(this, options.sides || this.options.sides);
+
+        Constraint.call(this);
+    }
+
+    Walls.prototype = Object.create(Constraint.prototype);
+    Walls.prototype.constructor = Walls;
+    /**
+     * @property Walls.ON_CONTACT
+     * @type Object
+     * @extends Wall.ON_CONTACT
+     * @static
+     */
+    Walls.ON_CONTACT = Wall.ON_CONTACT;
+    /**
+     * @property Walls.DEFAULT_OPTIONS
+     * @type Object
+     * @protected
+     * @static
+     */
+    Walls.DEFAULT_OPTIONS = {
+        /**
+         * An array of sides e.g., [Walls.LEFT, Walls.TOP]
+         *
+         * @type Array
+         * @attribute sides
+         * @default [Walls.LEFT, Walls.RIGHT, Walls.TOP, Walls.BOTTOM];
+         */
+        sides : Walls.TWO_DIMENSIONAL,
+
+        /**
+         * The size of the bounding box of the walls
+         *
+         * @attribute size
+         * @type Array
+         * @default [window.innerWidth, window.innerHeight, 0]
+         */
+        size : [window.innerWidth, window.innerHeight, 0],
+
+        /**
+         * The center of the wall relative to the size
+         *
+         * @attribute origin
+         * @type Array
+         * @default [.5, .5, .5]
+         */
+        origin : [.5, .5, .5],
+
+        /**
+         * Baumgarte stabilization parameter.
+         *    Makes constraints &quot;loosely&quot; (0) or &quot;tightly&quot; (1) enforced
+         *    Range : [0, 1]
+         *
+         * @attribute drift
+         * @type Number
+         * @default 0.5
+         */
+        drift : 0.5,
+
+        /**
+         * Amount of penetration in pixels to ignore before collision event triggers
+         *
+         * @attribute slop
+         * @type Number
+         * @default 0
+         */
+        slop : 0,
+
+        /**
+         * The energy ratio lost in a collision (0 = stick, 1 = elastic)
+         *    Range : [0, 1]
+         *
+         * @attribute restitution
+         * @type Number
+         * @default 0.5
+         */
+        restitution : 0.5,
+
+        /**
+         * How to handle collision against the wall
+         *
+         * @attribute onContact
+         * @type Number
+         */
+        onContact : Walls.ON_CONTACT.REFLECT
+    };
+
+    /**
+     * An enumeration of common types of walls
+     *    LEFT, RIGHT, TOP, BOTTOM, FRONT, BACK
+     *    TWO_DIMENSIONAL, THREE_DIMENSIONAL
+     *
+     * @property Walls.SIDES
+     * @type Object
+     * @final
+     * @static
+     */
+    Walls.SIDES = {
+        LEFT   : 0,
+        RIGHT  : 1,
+        TOP    : 2,
+        BOTTOM : 3,
+        FRONT  : 4,
+        BACK   : 5,
+        TWO_DIMENSIONAL : [0, 1, 2, 3],
+        THREE_DIMENSIONAL : [0, 1, 2, 3, 4, 5]
+    };
+
+    var _SIDE_NORMALS = {
+        0 : new Vector(1, 0, 0),
+        1 : new Vector(-1, 0, 0),
+        2 : new Vector(0, 1, 0),
+        3 : new Vector(0,-1, 0),
+        4 : new Vector(0, 0, 1),
+        5 : new Vector(0, 0,-1)
+    };
+
+    function _getDistance(side, size, origin) {
+        var distance;
+        var SIDES = Walls.SIDES;
+        switch (parseInt(side)) {
+            case SIDES.LEFT:
+                distance = size[0] * origin[0];
+                break;
+            case SIDES.TOP:
+                distance = size[1] * origin[1];
+                break;
+            case SIDES.FRONT:
+                distance = size[2] * origin[2];
+                break;
+            case SIDES.RIGHT:
+                distance = size[0] * (1 - origin[0]);
+                break;
+            case SIDES.BOTTOM:
+                distance = size[1] * (1 - origin[1]);
+                break;
+            case SIDES.BACK:
+                distance = size[2] * (1 - origin[2]);
+                break;
+        }
+        return distance;
+    }
+
+    /*
+     * Setter for options.
+     *
+     * @method setOptions
+     * @param options {Objects}
+     */
+    Walls.prototype.setOptions = function setOptions(options) {
+        var resizeFlag = false;
+        if (options.restitution !== undefined) _setOptionsForEach.call(this, {restitution : options.restitution});
+        if (options.drift !== undefined) _setOptionsForEach.call(this, {drift : options.drift});
+        if (options.slop !== undefined) _setOptionsForEach.call(this, {slop : options.slop});
+        if (options.onContact !== undefined) _setOptionsForEach.call(this, {onContact : options.onContact});
+        if (options.size !== undefined) resizeFlag = true;
+        if (options.sides !== undefined) this.options.sides = options.sides;
+        if (options.origin !== undefined) resizeFlag = true;
+        if (resizeFlag) this.setSize(options.size, options.origin);
+    };
+
+    function _createComponents(sides) {
+        this.components = {};
+        var components = this.components;
+
+        for (var i = 0; i &lt; sides.length; i++) {
+            var side = sides[i];
+            components[i] = new Wall({
+                normal   : _SIDE_NORMALS[side].clone(),
+                distance : _getDistance(side, this.options.size, this.options.origin)
+            });
+        }
+    }
+
+    /*
+     * Setter for size.
+     *
+     * @method setOptions
+     * @param options {Objects}
+     */
+    Walls.prototype.setSize = function setSize(size, origin) {
+        origin = origin || this.options.origin;
+        if (origin.length &lt; 3) origin[2] = 0.5;
+
+        this.forEach(function(wall, side) {
+            var d = _getDistance(side, size, origin);
+            wall.setOptions({distance : d});
+        });
+
+        this.options.size   = size;
+        this.options.origin = origin;
+    };
+
+    function _setOptionsForEach(options) {
+        this.forEach(function(wall) {
+            wall.setOptions(options);
+        });
+        for (var key in options) this.options[key] = options[key];
+    }
+
+    /**
+     * Adds an impulse to a physics body&#x27;s velocity due to the walls constraint
+     *
+     * @method applyConstraint
+     * @param targets {Array.Body}  Array of bodies to apply the constraint to
+     * @param source {Body}         The source of the constraint
+     * @param dt {Number}           Delta time
+     */
+    Walls.prototype.applyConstraint = function applyConstraint(targets, source, dt) {
+        this.forEach(function(wall) {
+            wall.applyConstraint(targets, source, dt);
+        });
+    };
+
+    /**
+     * Apply a method to each wall making up the walls
+     *
+     * @method applyConstraint
+     * @param fn {Function}  Function that takes in a wall as its first parameter
+     */
+    Walls.prototype.forEach = function forEach(fn) {
+        for (var key in this.sides) fn(this.sides[key], key);
+    };
+
+    /**
+     * Rotates the walls by an angle in the XY-plane
+     *
+     * @method applyConstraint
+     * @param angle {Function}
+     */
+    Walls.prototype.rotateZ = function rotateZ(angle) {
+        this.forEach(function(wall) {
+            var n = wall.options.normal;
+            n.rotateZ(angle).put(n);
+        });
+    };
+
+    /**
+     * Rotates the walls by an angle in the YZ-plane
+     *
+     * @method applyConstraint
+     * @param angle {Function}
+     */
+    Walls.prototype.rotateX = function rotateX(angle) {
+        this.forEach(function(wall) {
+            var n = wall.options.normal;
+            n.rotateX(angle).put(n);
+        });
+    };
+
+    /**
+     * Rotates the walls by an angle in the XZ-plane
+     *
+     * @method applyConstraint
+     * @param angle {Function}
+     */
+    Walls.prototype.rotateY = function rotateY(angle) {
+        this.forEach(function(wall) {
+            var n = wall.options.normal;
+            n.rotateY(angle).put(n);
+        });
+    };
+
+    module.exports = Walls;
+});
+
+    </pre>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>
