@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>core/Context.js</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+            
+                <h1><img src="../assets/css/logo.png" title=""></h1>
+            
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em>API Docs for: </em>
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+    <h2 class="off-left">APIs</h2>
+    <div id="api-tabview" class="tabview">
+        <ul class="tabs">
+            <li><a href="#api-classes">Classes</a></li>
+            <li><a href="#api-modules">Modules</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+        </div>
+
+        <div id="api-tabview-panel">
+            <ul id="api-classes" class="apis classes">
+            
+                <li><a href="../classes/Body.html">Body</a></li>
+            
+                <li><a href="../classes/CachedMap.html">CachedMap</a></li>
+            
+                <li><a href="../classes/CanvasSurface.html">CanvasSurface</a></li>
+            
+                <li><a href="../classes/Circle.html">Circle</a></li>
+            
+                <li><a href="../classes/Collision.html">Collision</a></li>
+            
+                <li><a href="../classes/Constraint.html">Constraint</a></li>
+            
+                <li><a href="../classes/ContainerSurface.html">ContainerSurface</a></li>
+            
+                <li><a href="../classes/Context.html">Context</a></li>
+            
+                <li><a href="../classes/Curve.html">Curve</a></li>
+            
+                <li><a href="../classes/Deck.html">Deck</a></li>
+            
+                <li><a href="../classes/Distance.html">Distance</a></li>
+            
+                <li><a href="../classes/Drag.html">Drag</a></li>
+            
+                <li><a href="../classes/Draggable.html">Draggable</a></li>
+            
+                <li><a href="../classes/EdgeSwapper.html">EdgeSwapper</a></li>
+            
+                <li><a href="../classes/ElementAllocator.html">ElementAllocator</a></li>
+            
+                <li><a href="../classes/Engine.html">Engine</a></li>
+            
+                <li><a href="../classes/Entity.html">Entity</a></li>
+            
+                <li><a href="../classes/EventArbiter.html">EventArbiter</a></li>
+            
+                <li><a href="../classes/EventEmitter.html">EventEmitter</a></li>
+            
+                <li><a href="../classes/EventFilter.html">EventFilter</a></li>
+            
+                <li><a href="../classes/EventHandler.html">EventHandler</a></li>
+            
+                <li><a href="../classes/EventMapper.html">EventMapper</a></li>
+            
+                <li><a href="../classes/Fader.html">Fader</a></li>
+            
+                <li><a href="../classes/Flipper.html">Flipper</a></li>
+            
+                <li><a href="../classes/Force.html">Force</a></li>
+            
+                <li><a href="../classes/GenericSync.html">GenericSync</a></li>
+            
+                <li><a href="../classes/GridLayout.html">GridLayout</a></li>
+            
+                <li><a href="../classes/Group.html">Group</a></li>
+            
+                <li><a href="../classes/HeaderFooterLayout.html">HeaderFooterLayout</a></li>
+            
+                <li><a href="../classes/ImageSurface.html">ImageSurface</a></li>
+            
+                <li><a href="../classes/InputSurface.html">InputSurface</a></li>
+            
+                <li><a href="../classes/KeyCodes.html">KeyCodes</a></li>
+            
+                <li><a href="../classes/Lightbox.html">Lightbox</a></li>
+            
+                <li><a href="../classes/Matrix.html">Matrix</a></li>
+            
+                <li><a href="../classes/Modifier.html">Modifier</a></li>
+            
+                <li><a href="../classes/ModifierChain.html">ModifierChain</a></li>
+            
+                <li><a href="../classes/MouseSync.html">MouseSync</a></li>
+            
+                <li><a href="../classes/MultipleTransition.html">MultipleTransition</a></li>
+            
+                <li><a href="../classes/NavigationBar.html">NavigationBar</a></li>
+            
+                <li><a href="../classes/OptionsManager.html">OptionsManager</a></li>
+            
+                <li><a href="../classes/Particle.html">Particle</a></li>
+            
+                <li><a href="../classes/PhysicsEngine.html">PhysicsEngine</a></li>
+            
+                <li><a href="../classes/PinchSync.html">PinchSync</a></li>
+            
+                <li><a href="../classes/Quaternion.html">Quaternion</a></li>
+            
+                <li><a href="../classes/Random.html">Random</a></li>
+            
+                <li><a href="../classes/RenderController.html">RenderController</a></li>
+            
+                <li><a href="../classes/RenderNode.html">RenderNode</a></li>
+            
+                <li><a href="../classes/Repulsion.html">Repulsion</a></li>
+            
+                <li><a href="../classes/RotateSync.html">RotateSync</a></li>
+            
+                <li><a href="../classes/RotationalDrag.html">RotationalDrag</a></li>
+            
+                <li><a href="../classes/RotationalSpring.html">RotationalSpring</a></li>
+            
+                <li><a href="../classes/ScaleSync.html">ScaleSync</a></li>
+            
+                <li><a href="../classes/Scene.html">Scene</a></li>
+            
+                <li><a href="../classes/ScrollContainer.html">ScrollContainer</a></li>
+            
+                <li><a href="../classes/Scroller.html">Scroller</a></li>
+            
+                <li><a href="../classes/ScrollSync.html">ScrollSync</a></li>
+            
+                <li><a href="../classes/Scrollview.html">Scrollview</a></li>
+            
+                <li><a href="../classes/Snap.html">Snap</a></li>
+            
+                <li><a href="../classes/SnapTransition.html">SnapTransition</a></li>
+            
+                <li><a href="../classes/SpecParser.html">SpecParser</a></li>
+            
+                <li><a href="../classes/Spring.html">Spring</a></li>
+            
+                <li><a href="../classes/SpringTransition.html">SpringTransition</a></li>
+            
+                <li><a href="../classes/StateModifier.html">StateModifier</a></li>
+            
+                <li><a href="../classes/Surface.html">Surface</a></li>
+            
+                <li><a href="../classes/SymplecticEuler.html">SymplecticEuler</a></li>
+            
+                <li><a href="../classes/TabBar.html">TabBar</a></li>
+            
+                <li><a href="../classes/Timer.html">Timer</a></li>
+            
+                <li><a href="../classes/TouchSync.html">TouchSync</a></li>
+            
+                <li><a href="../classes/TouchTracker.html">TouchTracker</a></li>
+            
+                <li><a href="../classes/Transform.html">Transform</a></li>
+            
+                <li><a href="../classes/Transitionable.html">Transitionable</a></li>
+            
+                <li><a href="../classes/TransitionableTransform.html">TransitionableTransform</a></li>
+            
+                <li><a href="../classes/TweenTransition.html">TweenTransition</a></li>
+            
+                <li><a href="../classes/TwoFingerSync.html">TwoFingerSync</a></li>
+            
+                <li><a href="../classes/Utilities.html">Utilities</a></li>
+            
+                <li><a href="../classes/Utility.html">Utility</a></li>
+            
+                <li><a href="../classes/Vector.html">Vector</a></li>
+            
+                <li><a href="../classes/VectorField.html">VectorField</a></li>
+            
+                <li><a href="../classes/VideoSurface.html">VideoSurface</a></li>
+            
+                <li><a href="../classes/View.html">View</a></li>
+            
+                <li><a href="../classes/ViewSequence.html">ViewSequence</a></li>
+            
+                <li><a href="../classes/Wall.html">Wall</a></li>
+            
+                <li><a href="../classes/Walls.html">Walls</a></li>
+            
+                <li><a href="../classes/WallTransition.html">WallTransition</a></li>
+            
+            </ul>
+
+            <ul id="api-modules" class="apis modules">
+            
+            </ul>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+        Show:
+        <label for="api-show-inherited">
+            <input type="checkbox" id="api-show-inherited" checked>
+            Inherited
+        </label>
+
+        <label for="api-show-protected">
+            <input type="checkbox" id="api-show-protected">
+            Protected
+        </label>
+
+        <label for="api-show-private">
+            <input type="checkbox" id="api-show-private">
+            Private
+        </label>
+        <label for="api-show-deprecated">
+            <input type="checkbox" id="api-show-deprecated">
+            Deprecated
+        </label>
+
+    </div>
+
+
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+                        <h1 class="file-heading">File: core/Context.js</h1>
+
+<div class="file">
+    <pre class="code prettyprint linenums">
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/.
+ *
+ * Owner: mark@famo.us
+ * @license MPL 2.0
+ * @copyright Famous Industries, Inc. 2014
+ */
+
+define(function(require, exports, module) {
+    var RenderNode = require(&#x27;./RenderNode&#x27;);
+    var EventHandler = require(&#x27;./EventHandler&#x27;);
+    var ElementAllocator = require(&#x27;./ElementAllocator&#x27;);
+    var Transform = require(&#x27;./Transform&#x27;);
+    var Transitionable = require(&#x27;famous/transitions/Transitionable&#x27;);
+
+    var _originZeroZero = [0, 0];
+
+    function _getElementSize(element) {
+        return [element.clientWidth, element.clientHeight];
+    }
+
+    /**
+     * The top-level container for a Famous-renderable piece of the document.
+     *   It is directly updated by the process-wide Engine object, and manages one
+     *   render tree root, which can contain other renderables.
+     *
+     * @class Context
+     * @constructor
+     * @private
+     * @param {Node} container Element in which content will be inserted
+     */
+    function Context(container) {
+        this.container = container;
+        this._allocator = new ElementAllocator(container);
+
+        this._node = new RenderNode();
+        this._eventOutput = new EventHandler();
+        this._size = _getElementSize(this.container);
+
+        this._perspectiveState = new Transitionable(0);
+        this._perspective = undefined;
+
+        this._nodeContext = {
+            allocator: this._allocator,
+            transform: Transform.identity,
+            opacity: 1,
+            origin: _originZeroZero,
+            size: this._size
+        };
+
+        this._eventOutput.on(&#x27;resize&#x27;, function() {
+            this.setSize(_getElementSize(this.container));
+        }.bind(this));
+
+    }
+
+    // Note: Unused
+    Context.prototype.getAllocator = function getAllocator() {
+        return this._allocator;
+    };
+
+    /**
+     * Add renderables to this Context&#x27;s render tree.
+     *
+     * @method add
+     *
+     * @param {Object} obj renderable object
+     * @return {RenderNode} RenderNode wrapping this object, if not already a RenderNode
+     */
+    Context.prototype.add = function add(obj) {
+        return this._node.add(obj);
+    };
+
+    /**
+     * Move this Context to another containing document element.
+     *
+     * @method migrate
+     *
+     * @param {Node} container Element to which content will be migrated
+     */
+    Context.prototype.migrate = function migrate(container) {
+        if (container === this.container) return;
+        this.container = container;
+        this._allocator.migrate(container);
+    };
+
+    /**
+     * Gets viewport size for Context.
+     *
+     * @method getSize
+     *
+     * @return {Array.Number} viewport size as [width, height]
+     */
+    Context.prototype.getSize = function getSize() {
+        return this._size;
+    };
+
+    /**
+     * Sets viewport size for Context.
+     *
+     * @method setSize
+     *
+     * @param {Array.Number} size [width, height].  If unspecified, use size of root document element.
+     */
+    Context.prototype.setSize = function setSize(size) {
+        if (!size) size = _getElementSize(this.container);
+        this._size[0] = size[0];
+        this._size[1] = size[1];
+    };
+
+    /**
+     * Commit this Context&#x27;s content changes to the document.
+     *
+     * @private
+     * @method update
+     * @param {Object} contextParameters engine commit specification
+     */
+    Context.prototype.update = function update(contextParameters) {
+        if (contextParameters) {
+            if (contextParameters.transform) this._nodeContext.transform = contextParameters.transform;
+            if (contextParameters.opacity) this._nodeContext.opacity = contextParameters.opacity;
+            if (contextParameters.origin) this._nodeContext.origin = contextParameters.origin;
+            if (contextParameters.size) this._nodeContext.size = contextParameters.size;
+        }
+        var perspective = this._perspectiveState.get();
+        if (perspective !== this._perspective) {
+            this.container.style.perspective = perspective ? perspective.toFixed() + &#x27;px&#x27; : &#x27;&#x27;;
+            this.container.style.webkitPerspective = perspective ? perspective.toFixed() : &#x27;&#x27;;
+            this._perspective = perspective;
+        }
+
+        this._node.commit(this._nodeContext);
+    };
+
+    /**
+     * Get current perspective of this context in pixels.
+     *
+     * @method getPerspective
+     * @return {Number} depth perspective in pixels
+     */
+    Context.prototype.getPerspective = function getPerspective() {
+        return this._perspectiveState.get();
+    };
+
+    /**
+     * Set current perspective of this context in pixels.
+     *
+     * @method getPerspective
+     * @param {Number} perspective in pixels
+     * @param {Object} [transition] Transitionable object for applying the change
+     * @param {function(Object)} callback function called on completion of transition
+     */
+    Context.prototype.setPerspective = function setPerspective(perspective, transition, callback) {
+        return this._perspectiveState.set(perspective, transition, callback);
+    };
+
+    /**
+     * Trigger an event, sending to all downstream handlers
+     *   listening for provided &#x27;type&#x27; key.
+     *
+     * @method emit
+     *
+     * @param {string} type event type key (for example, &#x27;click&#x27;)
+     * @param {Object} event event data
+     * @return {EventHandler} this
+     */
+    Context.prototype.emit = function emit(type, event) {
+        return this._eventOutput.emit(type, event);
+    };
+
+    /**
+     * Bind a callback function to an event type handled by this object.
+     *
+     * @method &quot;on&quot;
+     *
+     * @param {string} type event type key (for example, &#x27;click&#x27;)
+     * @param {function(string, Object)} handler callback
+     * @return {EventHandler} this
+     */
+    Context.prototype.on = function on(type, handler) {
+        return this._eventOutput.on(type, handler);
+    };
+
+    /**
+     * Unbind an event by type and handler.
+     *   This undoes the work of &quot;on&quot;.
+     *
+     * @method removeListener
+     *
+     * @param {string} type event type key (for example, &#x27;click&#x27;)
+     * @param {function} handler function object to remove
+     * @return {EventHandler} internal event handler object (for chaining)
+     */
+    Context.prototype.removeListener = function removeListener(type, handler) {
+        return this._eventOutput.removeListener(type, handler);
+    };
+
+    /**
+     * Add event handler object to set of downstream handlers.
+     *
+     * @method pipe
+     *
+     * @param {EventHandler} target event handler target object
+     * @return {EventHandler} passed event handler
+     */
+    Context.prototype.pipe = function pipe(target) {
+        return this._eventOutput.pipe(target);
+    };
+
+    /**
+     * Remove handler object from set of downstream handlers.
+     *   Undoes work of &quot;pipe&quot;.
+     *
+     * @method unpipe
+     *
+     * @param {EventHandler} target target handler object
+     * @return {EventHandler} provided target
+     */
+    Context.prototype.unpipe = function unpipe(target) {
+        return this._eventOutput.unpipe(target);
+    };
+
+    module.exports = Context;
+});
+
+    </pre>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>

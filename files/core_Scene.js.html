@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>core/Scene.js</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+            
+                <h1><img src="../assets/css/logo.png" title=""></h1>
+            
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em>API Docs for: </em>
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+    <h2 class="off-left">APIs</h2>
+    <div id="api-tabview" class="tabview">
+        <ul class="tabs">
+            <li><a href="#api-classes">Classes</a></li>
+            <li><a href="#api-modules">Modules</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+        </div>
+
+        <div id="api-tabview-panel">
+            <ul id="api-classes" class="apis classes">
+            
+                <li><a href="../classes/Body.html">Body</a></li>
+            
+                <li><a href="../classes/CachedMap.html">CachedMap</a></li>
+            
+                <li><a href="../classes/CanvasSurface.html">CanvasSurface</a></li>
+            
+                <li><a href="../classes/Circle.html">Circle</a></li>
+            
+                <li><a href="../classes/Collision.html">Collision</a></li>
+            
+                <li><a href="../classes/Constraint.html">Constraint</a></li>
+            
+                <li><a href="../classes/ContainerSurface.html">ContainerSurface</a></li>
+            
+                <li><a href="../classes/Context.html">Context</a></li>
+            
+                <li><a href="../classes/Curve.html">Curve</a></li>
+            
+                <li><a href="../classes/Deck.html">Deck</a></li>
+            
+                <li><a href="../classes/Distance.html">Distance</a></li>
+            
+                <li><a href="../classes/Drag.html">Drag</a></li>
+            
+                <li><a href="../classes/Draggable.html">Draggable</a></li>
+            
+                <li><a href="../classes/EdgeSwapper.html">EdgeSwapper</a></li>
+            
+                <li><a href="../classes/ElementAllocator.html">ElementAllocator</a></li>
+            
+                <li><a href="../classes/Engine.html">Engine</a></li>
+            
+                <li><a href="../classes/Entity.html">Entity</a></li>
+            
+                <li><a href="../classes/EventArbiter.html">EventArbiter</a></li>
+            
+                <li><a href="../classes/EventEmitter.html">EventEmitter</a></li>
+            
+                <li><a href="../classes/EventFilter.html">EventFilter</a></li>
+            
+                <li><a href="../classes/EventHandler.html">EventHandler</a></li>
+            
+                <li><a href="../classes/EventMapper.html">EventMapper</a></li>
+            
+                <li><a href="../classes/Fader.html">Fader</a></li>
+            
+                <li><a href="../classes/Flipper.html">Flipper</a></li>
+            
+                <li><a href="../classes/Force.html">Force</a></li>
+            
+                <li><a href="../classes/GenericSync.html">GenericSync</a></li>
+            
+                <li><a href="../classes/GridLayout.html">GridLayout</a></li>
+            
+                <li><a href="../classes/Group.html">Group</a></li>
+            
+                <li><a href="../classes/HeaderFooterLayout.html">HeaderFooterLayout</a></li>
+            
+                <li><a href="../classes/ImageSurface.html">ImageSurface</a></li>
+            
+                <li><a href="../classes/InputSurface.html">InputSurface</a></li>
+            
+                <li><a href="../classes/KeyCodes.html">KeyCodes</a></li>
+            
+                <li><a href="../classes/Lightbox.html">Lightbox</a></li>
+            
+                <li><a href="../classes/Matrix.html">Matrix</a></li>
+            
+                <li><a href="../classes/Modifier.html">Modifier</a></li>
+            
+                <li><a href="../classes/ModifierChain.html">ModifierChain</a></li>
+            
+                <li><a href="../classes/MouseSync.html">MouseSync</a></li>
+            
+                <li><a href="../classes/MultipleTransition.html">MultipleTransition</a></li>
+            
+                <li><a href="../classes/NavigationBar.html">NavigationBar</a></li>
+            
+                <li><a href="../classes/OptionsManager.html">OptionsManager</a></li>
+            
+                <li><a href="../classes/Particle.html">Particle</a></li>
+            
+                <li><a href="../classes/PhysicsEngine.html">PhysicsEngine</a></li>
+            
+                <li><a href="../classes/PinchSync.html">PinchSync</a></li>
+            
+                <li><a href="../classes/Quaternion.html">Quaternion</a></li>
+            
+                <li><a href="../classes/Random.html">Random</a></li>
+            
+                <li><a href="../classes/RenderController.html">RenderController</a></li>
+            
+                <li><a href="../classes/RenderNode.html">RenderNode</a></li>
+            
+                <li><a href="../classes/Repulsion.html">Repulsion</a></li>
+            
+                <li><a href="../classes/RotateSync.html">RotateSync</a></li>
+            
+                <li><a href="../classes/RotationalDrag.html">RotationalDrag</a></li>
+            
+                <li><a href="../classes/RotationalSpring.html">RotationalSpring</a></li>
+            
+                <li><a href="../classes/ScaleSync.html">ScaleSync</a></li>
+            
+                <li><a href="../classes/Scene.html">Scene</a></li>
+            
+                <li><a href="../classes/ScrollContainer.html">ScrollContainer</a></li>
+            
+                <li><a href="../classes/Scroller.html">Scroller</a></li>
+            
+                <li><a href="../classes/ScrollSync.html">ScrollSync</a></li>
+            
+                <li><a href="../classes/Scrollview.html">Scrollview</a></li>
+            
+                <li><a href="../classes/Snap.html">Snap</a></li>
+            
+                <li><a href="../classes/SnapTransition.html">SnapTransition</a></li>
+            
+                <li><a href="../classes/SpecParser.html">SpecParser</a></li>
+            
+                <li><a href="../classes/Spring.html">Spring</a></li>
+            
+                <li><a href="../classes/SpringTransition.html">SpringTransition</a></li>
+            
+                <li><a href="../classes/StateModifier.html">StateModifier</a></li>
+            
+                <li><a href="../classes/Surface.html">Surface</a></li>
+            
+                <li><a href="../classes/SymplecticEuler.html">SymplecticEuler</a></li>
+            
+                <li><a href="../classes/TabBar.html">TabBar</a></li>
+            
+                <li><a href="../classes/Timer.html">Timer</a></li>
+            
+                <li><a href="../classes/TouchSync.html">TouchSync</a></li>
+            
+                <li><a href="../classes/TouchTracker.html">TouchTracker</a></li>
+            
+                <li><a href="../classes/Transform.html">Transform</a></li>
+            
+                <li><a href="../classes/Transitionable.html">Transitionable</a></li>
+            
+                <li><a href="../classes/TransitionableTransform.html">TransitionableTransform</a></li>
+            
+                <li><a href="../classes/TweenTransition.html">TweenTransition</a></li>
+            
+                <li><a href="../classes/TwoFingerSync.html">TwoFingerSync</a></li>
+            
+                <li><a href="../classes/Utilities.html">Utilities</a></li>
+            
+                <li><a href="../classes/Utility.html">Utility</a></li>
+            
+                <li><a href="../classes/Vector.html">Vector</a></li>
+            
+                <li><a href="../classes/VectorField.html">VectorField</a></li>
+            
+                <li><a href="../classes/VideoSurface.html">VideoSurface</a></li>
+            
+                <li><a href="../classes/View.html">View</a></li>
+            
+                <li><a href="../classes/ViewSequence.html">ViewSequence</a></li>
+            
+                <li><a href="../classes/Wall.html">Wall</a></li>
+            
+                <li><a href="../classes/Walls.html">Walls</a></li>
+            
+                <li><a href="../classes/WallTransition.html">WallTransition</a></li>
+            
+            </ul>
+
+            <ul id="api-modules" class="apis modules">
+            
+            </ul>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+        Show:
+        <label for="api-show-inherited">
+            <input type="checkbox" id="api-show-inherited" checked>
+            Inherited
+        </label>
+
+        <label for="api-show-protected">
+            <input type="checkbox" id="api-show-protected">
+            Protected
+        </label>
+
+        <label for="api-show-private">
+            <input type="checkbox" id="api-show-private">
+            Private
+        </label>
+        <label for="api-show-deprecated">
+            <input type="checkbox" id="api-show-deprecated">
+            Deprecated
+        </label>
+
+    </div>
+
+
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+                        <h1 class="file-heading">File: core/Scene.js</h1>
+
+<div class="file">
+    <pre class="code prettyprint linenums">
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/.
+ *
+ * Owner: mark@famo.us
+ * @license MPL 2.0
+ * @copyright Famous Industries, Inc. 2014
+ */
+
+define(function(require, exports, module) {
+    var Transform = require(&#x27;./Transform&#x27;);
+    var Modifier = require(&#x27;./Modifier&#x27;);
+    var RenderNode = require(&#x27;./RenderNode&#x27;);
+
+    /**
+     * Builds and renders a scene graph based on a declarative structure definition.
+     * See the Scene examples in the examples distribution (http://github.com/Famous/examples.git).
+     *
+     * @class Scene
+     * @constructor
+     * @param {Object} definition in the format of a render spec.
+     */
+    function Scene(definition) {
+        this.id = null;
+        this._objects = null;
+
+        this.node = new RenderNode();
+        this._definition = null;
+
+        if (definition) this.load(definition);
+    }
+
+    var _MATRIX_GENERATORS = {
+        &#x27;translate&#x27;: Transform.translate,
+        &#x27;rotate&#x27;: Transform.rotate,
+        &#x27;rotateX&#x27;: Transform.rotateX,
+        &#x27;rotateY&#x27;: Transform.rotateY,
+        &#x27;rotateZ&#x27;: Transform.rotateZ,
+        &#x27;rotateAxis&#x27;: Transform.rotateAxis,
+        &#x27;scale&#x27;: Transform.scale,
+        &#x27;skew&#x27;: Transform.skew,
+        &#x27;matrix3d&#x27;: function() {
+            return arguments;
+        }
+    };
+
+    /**
+     * Clone this scene
+     *
+     * @method create
+     * @return {Scene} deep copy of this scene
+     */
+    Scene.prototype.create = function create() {
+        return new Scene(this._definition);
+    };
+
+    function _resolveTransformMatrix(matrixDefinition) {
+        for (var type in _MATRIX_GENERATORS) {
+            if (type in matrixDefinition) {
+                var args = matrixDefinition[type];
+                if (!(args instanceof Array)) args = [args];
+                return _MATRIX_GENERATORS[type].apply(this, args);
+            }
+        }
+    }
+
+    // parse transform into tree of render nodes, doing matrix multiplication
+    // when available
+    function _parseTransform(definition) {
+        var transformDefinition = definition.transform;
+        var opacity = definition.opacity;
+        var origin = definition.origin;
+        var size = definition.size;
+        var transform = Transform.identity;
+        if (transformDefinition instanceof Array) {
+            if (transformDefinition.length === 16 &amp;&amp; typeof transformDefinition[0] === &#x27;number&#x27;) {
+                transform = transformDefinition;
+            }
+            else {
+                for (var i = 0; i &lt; transformDefinition.length; i++) {
+                    transform = Transform.multiply(transform, _resolveTransformMatrix(transformDefinition[i]));
+                }
+            }
+        }
+        else if (transformDefinition instanceof Object) {
+            transform = _resolveTransformMatrix(transformDefinition);
+        }
+
+        var result = new Modifier({
+            transform: transform,
+            opacity: opacity,
+            origin: origin,
+            size: size
+        });
+        return result;
+    }
+
+    function _parseArray(definition) {
+        var result = new RenderNode();
+        for (var i = 0; i &lt; definition.length; i++) {
+            var obj = _parse.call(this, definition[i]);
+            if (obj) result.add(obj);
+        }
+        return result;
+    }
+
+    // parse object directly into tree of RenderNodes
+    function _parse(definition) {
+        var result;
+        var id;
+        if (definition instanceof Array) {
+            result = _parseArray.call(this, definition);
+        }
+        else {
+            id = this._objects.length;
+            if (definition.render &amp;&amp; (definition.render instanceof Function)) {
+                result = definition;
+            }
+            else if (definition.target) {
+                var targetObj = _parse.call(this, definition.target);
+                var obj = _parseTransform.call(this, definition);
+
+                result = new RenderNode(obj);
+                result.add(targetObj);
+                if (definition.id) this.id[definition.id] = obj;
+            }
+            else if (definition.id) {
+                result = new RenderNode();
+                this.id[definition.id] = result;
+            }
+        }
+        this._objects[id] = result;
+        return result;
+    }
+
+    /**
+     * Builds and renders a scene graph based on a canonical declarative scene definition.
+     * See examples/Scene/example.js.
+     *
+     * @method load
+     * @param {Object} definition definition in the format of a render spec.
+     */
+    Scene.prototype.load = function load(definition) {
+        this._definition = definition;
+        this.id = {};
+        this._objects = [];
+        this.node.set(_parse.call(this, definition));
+    };
+
+    /**
+     * Add renderables to this component&#x27;s render tree
+     *
+     * @method add
+     *
+     * @param {Object} obj renderable object
+     * @return {RenderNode} Render wrapping provided object, if not already a RenderNode
+     */
+    Scene.prototype.add = function add() {
+        return this.node.add.apply(this.node, arguments);
+    };
+
+    /**
+     * Generate a render spec from the contents of this component.
+     *
+     * @private
+     * @method render
+     * @return {number} Render spec for this component
+     */
+    Scene.prototype.render = function render() {
+        return this.node.render.apply(this.node, arguments);
+    };
+
+    module.exports = Scene;
+});
+
+    </pre>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>

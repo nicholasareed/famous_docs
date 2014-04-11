@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>math/Vector.js</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+            
+                <h1><img src="../assets/css/logo.png" title=""></h1>
+            
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em>API Docs for: </em>
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+    <h2 class="off-left">APIs</h2>
+    <div id="api-tabview" class="tabview">
+        <ul class="tabs">
+            <li><a href="#api-classes">Classes</a></li>
+            <li><a href="#api-modules">Modules</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+        </div>
+
+        <div id="api-tabview-panel">
+            <ul id="api-classes" class="apis classes">
+            
+                <li><a href="../classes/Body.html">Body</a></li>
+            
+                <li><a href="../classes/CachedMap.html">CachedMap</a></li>
+            
+                <li><a href="../classes/CanvasSurface.html">CanvasSurface</a></li>
+            
+                <li><a href="../classes/Circle.html">Circle</a></li>
+            
+                <li><a href="../classes/Collision.html">Collision</a></li>
+            
+                <li><a href="../classes/Constraint.html">Constraint</a></li>
+            
+                <li><a href="../classes/ContainerSurface.html">ContainerSurface</a></li>
+            
+                <li><a href="../classes/Context.html">Context</a></li>
+            
+                <li><a href="../classes/Curve.html">Curve</a></li>
+            
+                <li><a href="../classes/Deck.html">Deck</a></li>
+            
+                <li><a href="../classes/Distance.html">Distance</a></li>
+            
+                <li><a href="../classes/Drag.html">Drag</a></li>
+            
+                <li><a href="../classes/Draggable.html">Draggable</a></li>
+            
+                <li><a href="../classes/EdgeSwapper.html">EdgeSwapper</a></li>
+            
+                <li><a href="../classes/ElementAllocator.html">ElementAllocator</a></li>
+            
+                <li><a href="../classes/Engine.html">Engine</a></li>
+            
+                <li><a href="../classes/Entity.html">Entity</a></li>
+            
+                <li><a href="../classes/EventArbiter.html">EventArbiter</a></li>
+            
+                <li><a href="../classes/EventEmitter.html">EventEmitter</a></li>
+            
+                <li><a href="../classes/EventFilter.html">EventFilter</a></li>
+            
+                <li><a href="../classes/EventHandler.html">EventHandler</a></li>
+            
+                <li><a href="../classes/EventMapper.html">EventMapper</a></li>
+            
+                <li><a href="../classes/Fader.html">Fader</a></li>
+            
+                <li><a href="../classes/Flipper.html">Flipper</a></li>
+            
+                <li><a href="../classes/Force.html">Force</a></li>
+            
+                <li><a href="../classes/GenericSync.html">GenericSync</a></li>
+            
+                <li><a href="../classes/GridLayout.html">GridLayout</a></li>
+            
+                <li><a href="../classes/Group.html">Group</a></li>
+            
+                <li><a href="../classes/HeaderFooterLayout.html">HeaderFooterLayout</a></li>
+            
+                <li><a href="../classes/ImageSurface.html">ImageSurface</a></li>
+            
+                <li><a href="../classes/InputSurface.html">InputSurface</a></li>
+            
+                <li><a href="../classes/KeyCodes.html">KeyCodes</a></li>
+            
+                <li><a href="../classes/Lightbox.html">Lightbox</a></li>
+            
+                <li><a href="../classes/Matrix.html">Matrix</a></li>
+            
+                <li><a href="../classes/Modifier.html">Modifier</a></li>
+            
+                <li><a href="../classes/ModifierChain.html">ModifierChain</a></li>
+            
+                <li><a href="../classes/MouseSync.html">MouseSync</a></li>
+            
+                <li><a href="../classes/MultipleTransition.html">MultipleTransition</a></li>
+            
+                <li><a href="../classes/NavigationBar.html">NavigationBar</a></li>
+            
+                <li><a href="../classes/OptionsManager.html">OptionsManager</a></li>
+            
+                <li><a href="../classes/Particle.html">Particle</a></li>
+            
+                <li><a href="../classes/PhysicsEngine.html">PhysicsEngine</a></li>
+            
+                <li><a href="../classes/PinchSync.html">PinchSync</a></li>
+            
+                <li><a href="../classes/Quaternion.html">Quaternion</a></li>
+            
+                <li><a href="../classes/Random.html">Random</a></li>
+            
+                <li><a href="../classes/RenderController.html">RenderController</a></li>
+            
+                <li><a href="../classes/RenderNode.html">RenderNode</a></li>
+            
+                <li><a href="../classes/Repulsion.html">Repulsion</a></li>
+            
+                <li><a href="../classes/RotateSync.html">RotateSync</a></li>
+            
+                <li><a href="../classes/RotationalDrag.html">RotationalDrag</a></li>
+            
+                <li><a href="../classes/RotationalSpring.html">RotationalSpring</a></li>
+            
+                <li><a href="../classes/ScaleSync.html">ScaleSync</a></li>
+            
+                <li><a href="../classes/Scene.html">Scene</a></li>
+            
+                <li><a href="../classes/ScrollContainer.html">ScrollContainer</a></li>
+            
+                <li><a href="../classes/Scroller.html">Scroller</a></li>
+            
+                <li><a href="../classes/ScrollSync.html">ScrollSync</a></li>
+            
+                <li><a href="../classes/Scrollview.html">Scrollview</a></li>
+            
+                <li><a href="../classes/Snap.html">Snap</a></li>
+            
+                <li><a href="../classes/SnapTransition.html">SnapTransition</a></li>
+            
+                <li><a href="../classes/SpecParser.html">SpecParser</a></li>
+            
+                <li><a href="../classes/Spring.html">Spring</a></li>
+            
+                <li><a href="../classes/SpringTransition.html">SpringTransition</a></li>
+            
+                <li><a href="../classes/StateModifier.html">StateModifier</a></li>
+            
+                <li><a href="../classes/Surface.html">Surface</a></li>
+            
+                <li><a href="../classes/SymplecticEuler.html">SymplecticEuler</a></li>
+            
+                <li><a href="../classes/TabBar.html">TabBar</a></li>
+            
+                <li><a href="../classes/Timer.html">Timer</a></li>
+            
+                <li><a href="../classes/TouchSync.html">TouchSync</a></li>
+            
+                <li><a href="../classes/TouchTracker.html">TouchTracker</a></li>
+            
+                <li><a href="../classes/Transform.html">Transform</a></li>
+            
+                <li><a href="../classes/Transitionable.html">Transitionable</a></li>
+            
+                <li><a href="../classes/TransitionableTransform.html">TransitionableTransform</a></li>
+            
+                <li><a href="../classes/TweenTransition.html">TweenTransition</a></li>
+            
+                <li><a href="../classes/TwoFingerSync.html">TwoFingerSync</a></li>
+            
+                <li><a href="../classes/Utilities.html">Utilities</a></li>
+            
+                <li><a href="../classes/Utility.html">Utility</a></li>
+            
+                <li><a href="../classes/Vector.html">Vector</a></li>
+            
+                <li><a href="../classes/VectorField.html">VectorField</a></li>
+            
+                <li><a href="../classes/VideoSurface.html">VideoSurface</a></li>
+            
+                <li><a href="../classes/View.html">View</a></li>
+            
+                <li><a href="../classes/ViewSequence.html">ViewSequence</a></li>
+            
+                <li><a href="../classes/Wall.html">Wall</a></li>
+            
+                <li><a href="../classes/Walls.html">Walls</a></li>
+            
+                <li><a href="../classes/WallTransition.html">WallTransition</a></li>
+            
+            </ul>
+
+            <ul id="api-modules" class="apis modules">
+            
+            </ul>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+        Show:
+        <label for="api-show-inherited">
+            <input type="checkbox" id="api-show-inherited" checked>
+            Inherited
+        </label>
+
+        <label for="api-show-protected">
+            <input type="checkbox" id="api-show-protected">
+            Protected
+        </label>
+
+        <label for="api-show-private">
+            <input type="checkbox" id="api-show-private">
+            Private
+        </label>
+        <label for="api-show-deprecated">
+            <input type="checkbox" id="api-show-deprecated">
+            Deprecated
+        </label>
+
+    </div>
+
+
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+                        <h1 class="file-heading">File: math/Vector.js</h1>
+
+<div class="file">
+    <pre class="code prettyprint linenums">
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/.
+ *
+ * Owner: david@famo.us
+ * @license MPL 2.0
+ * @copyright Famous Industries, Inc. 2014
+ */
+
+define(function(require, exports, module) {
+
+    /**
+     * Three-element floating point vector.
+     *
+     * @class Vector
+     * @constructor
+     *
+     * @param {number} x x element value
+     * @param {number} y y element value
+     * @param {number} z z element value
+     */
+    function Vector(x,y,z) {
+        if (arguments.length === 1) this.set(x);
+        else {
+            this.x = x || 0;
+            this.y = y || 0;
+            this.z = z || 0;
+        }
+        return this;
+    }
+
+    var _register = new Vector(0,0,0);
+
+    /**
+     * Add this element-wise to another Vector, element-wise.
+     *   Note: This sets the internal result register, so other references to that vector will change.
+     *
+     * @method add
+     * @param {Vector} v addend
+     * @return {Vector} vector sum
+     */
+    Vector.prototype.add = function add(v) {
+        return _setXYZ.call(_register,
+            this.x + v.x,
+            this.y + v.y,
+            this.z + v.z
+        );
+    };
+
+    /**
+     * Subtract another vector from this vector, element-wise.
+     *   Note: This sets the internal result register, so other references to that vector will change.
+     *
+     * @method sub
+     * @param {Vector} v subtrahend
+     * @return {Vector} vector difference
+     */
+    Vector.prototype.sub = function sub(v) {
+        return _setXYZ.call(_register,
+            this.x - v.x,
+            this.y - v.y,
+            this.z - v.z
+        );
+    };
+
+    /**
+     * Scale Vector by floating point r.
+     *   Note: This sets the internal result register, so other references to that vector will change.
+     *
+     * @method mult
+     *
+     * @param {number} r scalar
+     * @return {Vector} vector result
+     */
+    Vector.prototype.mult = function mult(r) {
+        return _setXYZ.call(_register,
+            r * this.x,
+            r * this.y,
+            r * this.z
+        );
+    };
+
+    /**
+     * Scale Vector by floating point 1/r.
+     *   Note: This sets the internal result register, so other references to that vector will change.
+     *
+     * @method div
+     *
+     * @param {number} r scalar
+     * @return {Vector} vector result
+     */
+    Vector.prototype.div = function div(r) {
+        return this.mult(1 / r);
+    };
+
+    /**
+     * Given another vector v, return cross product (v)x(this).
+     *   Note: This sets the internal result register, so other references to that vector will change.
+     *
+     * @method cross
+     * @param {Vector} v Left Hand Vector
+     * @return {Vector} vector result
+     */
+    Vector.prototype.cross = function cross(v) {
+        var x = this.x;
+        var y = this.y;
+        var z = this.z;
+        var vx = v.x;
+        var vy = v.y;
+        var vz = v.z;
+
+        return _setXYZ.call(_register,
+            z * vy - y * vz,
+            x * vz - z * vx,
+            y * vx - x * vy
+        );
+    };
+
+    /**
+     * Component-wise equality test between this and Vector v.
+     * @method equals
+     * @param {Vector} v vector to compare
+     * @return {boolean}
+     */
+    Vector.prototype.equals = function equals(v) {
+        return (v.x === this.x &amp;&amp; v.y === this.y &amp;&amp; v.z === this.z);
+    };
+
+    /**
+     * Rotate clockwise around x-axis by theta radians.
+     *   Note: This sets the internal result register, so other references to that vector will change.
+     * @method rotateX
+     * @param {number} theta radians
+     * @return {Vector} rotated vector
+     */
+    Vector.prototype.rotateX = function rotateX(theta) {
+        var x = this.x;
+        var y = this.y;
+        var z = this.z;
+
+        var cosTheta = Math.cos(theta);
+        var sinTheta = Math.sin(theta);
+
+        return _setXYZ.call(_register,
+            x,
+            y * cosTheta - z * sinTheta,
+            y * sinTheta + z * cosTheta
+        );
+    };
+
+    /**
+     * Rotate clockwise around y-axis by theta radians.
+     *   Note: This sets the internal result register, so other references to that vector will change.
+     * @method rotateY
+     * @param {number} theta radians
+     * @return {Vector} rotated vector
+     */
+    Vector.prototype.rotateY = function rotateY(theta) {
+        var x = this.x;
+        var y = this.y;
+        var z = this.z;
+
+        var cosTheta = Math.cos(theta);
+        var sinTheta = Math.sin(theta);
+
+        return _setXYZ.call(_register,
+            z * sinTheta + x * cosTheta,
+            y,
+            z * cosTheta - x * sinTheta
+        );
+    };
+
+    /**
+     * Rotate clockwise around z-axis by theta radians.
+     *   Note: This sets the internal result register, so other references to that vector will change.
+     * @method rotateZ
+     * @param {number} theta radians
+     * @return {Vector} rotated vector
+     */
+    Vector.prototype.rotateZ = function rotateZ(theta) {
+        var x = this.x;
+        var y = this.y;
+        var z = this.z;
+
+        var cosTheta = Math.cos(theta);
+        var sinTheta = Math.sin(theta);
+
+        return _setXYZ.call(_register,
+            x * cosTheta - y * sinTheta,
+            x * sinTheta + y * cosTheta,
+            z
+        );
+    };
+
+    /**
+     * Return dot product of this with a second Vector
+     * @method dot
+     * @param {Vector} v second vector
+     * @return {number} dot product
+     */
+    Vector.prototype.dot = function dot(v) {
+        return this.x * v.x + this.y * v.y + this.z * v.z;
+    };
+
+    /**
+     * Return squared length of this vector
+     * @method normSquared
+     * @return {number} squared length
+     */
+    Vector.prototype.normSquared = function normSquared() {
+        return this.dot(this);
+    };
+
+    /**
+     * Return length of this vector
+     * @method norm
+     * @return {number} length
+     */
+    Vector.prototype.norm = function norm() {
+        return Math.sqrt(this.normSquared());
+    };
+
+    /**
+     * Scale Vector to specified length.
+     *   If length is less than internal tolerance, set vector to [length, 0, 0].
+     *   Note: This sets the internal result register, so other references to that vector will change.
+     * @method normalize
+     *
+     * @param {number} length target length, default 1.0
+     * @return {Vector}
+     */
+    Vector.prototype.normalize = function normalize(length) {
+        if (arguments.length === 0) length = 1;
+        var norm = this.norm();
+
+        if (norm &gt; 1e-7) return _setFromVector.call(_register, this.mult(length / norm));
+        else return _setXYZ.call(_register, length, 0, 0);
+    };
+
+    /**
+     * Make a separate copy of the Vector.
+     *
+     * @method clone
+     *
+     * @return {Vector}
+     */
+    Vector.prototype.clone = function clone() {
+        return new Vector(this);
+    };
+
+    /**
+     * True if and only if every value is 0 (or falsy)
+     *
+     * @method isZero
+     *
+     * @return {boolean}
+     */
+    Vector.prototype.isZero = function isZero() {
+        return !(this.x || this.y || this.z);
+    };
+
+    function _setXYZ(x,y,z) {
+        this.x = x;
+        this.y = y;
+        this.z = z;
+        return this;
+    }
+
+    function _setFromArray(v) {
+        return _setXYZ.call(this,v[0],v[1],v[2] || 0);
+    }
+
+    function _setFromVector(v) {
+        return _setXYZ.call(this, v.x, v.y, v.z);
+    }
+
+    function _setFromNumber(x) {
+        return _setXYZ.call(this,x,0,0);
+    }
+
+    /**
+     * Set this Vector to the values in the provided Array or Vector.
+     *
+     * @method set
+     * @param {object} v array, Vector, or number
+     * @return {Vector} this
+     */
+    Vector.prototype.set = function set(v) {
+        if (v instanceof Array)    return _setFromArray.call(this, v);
+        if (v instanceof Vector)   return _setFromVector.call(this, v);
+        if (typeof v === &#x27;number&#x27;) return _setFromNumber.call(this, v);
+    };
+
+    Vector.prototype.setXYZ = function(x,y,z) {
+        return _setXYZ.apply(this, arguments);
+    };
+
+    Vector.prototype.set1D = function(x) {
+        return _setFromNumber.call(this, x);
+    };
+
+    /**
+     * Put result of last internal register calculation in specified output vector.
+     *
+     * @method put
+     * @param {Vector} v destination vector
+     * @return {Vector} destination vector
+     */
+
+    Vector.prototype.put = function put(v) {
+        _setFromVector.call(v, _register);
+    };
+
+    /**
+     * Set this vector to [0,0,0]
+     *
+     * @method clear
+     */
+    Vector.prototype.clear = function clear() {
+        return _setXYZ.call(this,0,0,0);
+    };
+
+    /**
+     * Scale this Vector down to specified &quot;cap&quot; length.
+     *   If Vector shorter than cap, or cap is Infinity, do nothing.
+     *   Note: This sets the internal result register, so other references to that vector will change.
+     *
+     * @method cap
+     * @return {Vector} capped vector
+     */
+    Vector.prototype.cap = function cap(cap) {
+        if (cap === Infinity) return _setFromVector.call(_register, this);
+        var norm = this.norm();
+        if (norm &gt; cap) return _setFromVector.call(_register, this.mult(cap / norm));
+        else return _setFromVector.call(_register, this);
+    };
+
+    /**
+     * Return projection of this Vector onto another.
+     *   Note: This sets the internal result register, so other references to that vector will change.
+     *
+     * @method project
+     * @param {Vector} n vector to project upon
+     * @return {Vector} projected vector
+     */
+    Vector.prototype.project = function project(n) {
+        return n.mult(this.dot(n));
+    };
+
+    /**
+     * Reflect this Vector across provided vector.
+     *   Note: This sets the internal result register, so other references to that vector will change.
+     *
+     * @method reflectAcross
+     * @param {Vector} n vector to reflect across
+     * @return {Vector} reflected vector
+     */
+    Vector.prototype.reflectAcross = function reflectAcross(n) {
+        n.normalize().put(n);
+        return _setFromVector(_register, this.sub(this.project(n).mult(2)));
+    };
+
+    /**
+     * Convert Vector to three-element array.
+     *
+     * @method get
+     * @return {array&lt;number&gt;} three-element array
+     */
+    Vector.prototype.get = function get() {
+        return [this.x, this.y, this.z];
+    };
+
+    Vector.prototype.get1D = function() {
+        return this.x;
+    };
+
+    module.exports = Vector;
+
+});
+
+    </pre>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>

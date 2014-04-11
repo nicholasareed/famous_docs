@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>physics/PhysicsEngine.js</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+            
+                <h1><img src="../assets/css/logo.png" title=""></h1>
+            
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em>API Docs for: </em>
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+    <h2 class="off-left">APIs</h2>
+    <div id="api-tabview" class="tabview">
+        <ul class="tabs">
+            <li><a href="#api-classes">Classes</a></li>
+            <li><a href="#api-modules">Modules</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+        </div>
+
+        <div id="api-tabview-panel">
+            <ul id="api-classes" class="apis classes">
+            
+                <li><a href="../classes/Body.html">Body</a></li>
+            
+                <li><a href="../classes/CachedMap.html">CachedMap</a></li>
+            
+                <li><a href="../classes/CanvasSurface.html">CanvasSurface</a></li>
+            
+                <li><a href="../classes/Circle.html">Circle</a></li>
+            
+                <li><a href="../classes/Collision.html">Collision</a></li>
+            
+                <li><a href="../classes/Constraint.html">Constraint</a></li>
+            
+                <li><a href="../classes/ContainerSurface.html">ContainerSurface</a></li>
+            
+                <li><a href="../classes/Context.html">Context</a></li>
+            
+                <li><a href="../classes/Curve.html">Curve</a></li>
+            
+                <li><a href="../classes/Deck.html">Deck</a></li>
+            
+                <li><a href="../classes/Distance.html">Distance</a></li>
+            
+                <li><a href="../classes/Drag.html">Drag</a></li>
+            
+                <li><a href="../classes/Draggable.html">Draggable</a></li>
+            
+                <li><a href="../classes/EdgeSwapper.html">EdgeSwapper</a></li>
+            
+                <li><a href="../classes/ElementAllocator.html">ElementAllocator</a></li>
+            
+                <li><a href="../classes/Engine.html">Engine</a></li>
+            
+                <li><a href="../classes/Entity.html">Entity</a></li>
+            
+                <li><a href="../classes/EventArbiter.html">EventArbiter</a></li>
+            
+                <li><a href="../classes/EventEmitter.html">EventEmitter</a></li>
+            
+                <li><a href="../classes/EventFilter.html">EventFilter</a></li>
+            
+                <li><a href="../classes/EventHandler.html">EventHandler</a></li>
+            
+                <li><a href="../classes/EventMapper.html">EventMapper</a></li>
+            
+                <li><a href="../classes/Fader.html">Fader</a></li>
+            
+                <li><a href="../classes/Flipper.html">Flipper</a></li>
+            
+                <li><a href="../classes/Force.html">Force</a></li>
+            
+                <li><a href="../classes/GenericSync.html">GenericSync</a></li>
+            
+                <li><a href="../classes/GridLayout.html">GridLayout</a></li>
+            
+                <li><a href="../classes/Group.html">Group</a></li>
+            
+                <li><a href="../classes/HeaderFooterLayout.html">HeaderFooterLayout</a></li>
+            
+                <li><a href="../classes/ImageSurface.html">ImageSurface</a></li>
+            
+                <li><a href="../classes/InputSurface.html">InputSurface</a></li>
+            
+                <li><a href="../classes/KeyCodes.html">KeyCodes</a></li>
+            
+                <li><a href="../classes/Lightbox.html">Lightbox</a></li>
+            
+                <li><a href="../classes/Matrix.html">Matrix</a></li>
+            
+                <li><a href="../classes/Modifier.html">Modifier</a></li>
+            
+                <li><a href="../classes/ModifierChain.html">ModifierChain</a></li>
+            
+                <li><a href="../classes/MouseSync.html">MouseSync</a></li>
+            
+                <li><a href="../classes/MultipleTransition.html">MultipleTransition</a></li>
+            
+                <li><a href="../classes/NavigationBar.html">NavigationBar</a></li>
+            
+                <li><a href="../classes/OptionsManager.html">OptionsManager</a></li>
+            
+                <li><a href="../classes/Particle.html">Particle</a></li>
+            
+                <li><a href="../classes/PhysicsEngine.html">PhysicsEngine</a></li>
+            
+                <li><a href="../classes/PinchSync.html">PinchSync</a></li>
+            
+                <li><a href="../classes/Quaternion.html">Quaternion</a></li>
+            
+                <li><a href="../classes/Random.html">Random</a></li>
+            
+                <li><a href="../classes/RenderController.html">RenderController</a></li>
+            
+                <li><a href="../classes/RenderNode.html">RenderNode</a></li>
+            
+                <li><a href="../classes/Repulsion.html">Repulsion</a></li>
+            
+                <li><a href="../classes/RotateSync.html">RotateSync</a></li>
+            
+                <li><a href="../classes/RotationalDrag.html">RotationalDrag</a></li>
+            
+                <li><a href="../classes/RotationalSpring.html">RotationalSpring</a></li>
+            
+                <li><a href="../classes/ScaleSync.html">ScaleSync</a></li>
+            
+                <li><a href="../classes/Scene.html">Scene</a></li>
+            
+                <li><a href="../classes/ScrollContainer.html">ScrollContainer</a></li>
+            
+                <li><a href="../classes/Scroller.html">Scroller</a></li>
+            
+                <li><a href="../classes/ScrollSync.html">ScrollSync</a></li>
+            
+                <li><a href="../classes/Scrollview.html">Scrollview</a></li>
+            
+                <li><a href="../classes/Snap.html">Snap</a></li>
+            
+                <li><a href="../classes/SnapTransition.html">SnapTransition</a></li>
+            
+                <li><a href="../classes/SpecParser.html">SpecParser</a></li>
+            
+                <li><a href="../classes/Spring.html">Spring</a></li>
+            
+                <li><a href="../classes/SpringTransition.html">SpringTransition</a></li>
+            
+                <li><a href="../classes/StateModifier.html">StateModifier</a></li>
+            
+                <li><a href="../classes/Surface.html">Surface</a></li>
+            
+                <li><a href="../classes/SymplecticEuler.html">SymplecticEuler</a></li>
+            
+                <li><a href="../classes/TabBar.html">TabBar</a></li>
+            
+                <li><a href="../classes/Timer.html">Timer</a></li>
+            
+                <li><a href="../classes/TouchSync.html">TouchSync</a></li>
+            
+                <li><a href="../classes/TouchTracker.html">TouchTracker</a></li>
+            
+                <li><a href="../classes/Transform.html">Transform</a></li>
+            
+                <li><a href="../classes/Transitionable.html">Transitionable</a></li>
+            
+                <li><a href="../classes/TransitionableTransform.html">TransitionableTransform</a></li>
+            
+                <li><a href="../classes/TweenTransition.html">TweenTransition</a></li>
+            
+                <li><a href="../classes/TwoFingerSync.html">TwoFingerSync</a></li>
+            
+                <li><a href="../classes/Utilities.html">Utilities</a></li>
+            
+                <li><a href="../classes/Utility.html">Utility</a></li>
+            
+                <li><a href="../classes/Vector.html">Vector</a></li>
+            
+                <li><a href="../classes/VectorField.html">VectorField</a></li>
+            
+                <li><a href="../classes/VideoSurface.html">VideoSurface</a></li>
+            
+                <li><a href="../classes/View.html">View</a></li>
+            
+                <li><a href="../classes/ViewSequence.html">ViewSequence</a></li>
+            
+                <li><a href="../classes/Wall.html">Wall</a></li>
+            
+                <li><a href="../classes/Walls.html">Walls</a></li>
+            
+                <li><a href="../classes/WallTransition.html">WallTransition</a></li>
+            
+            </ul>
+
+            <ul id="api-modules" class="apis modules">
+            
+            </ul>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+        Show:
+        <label for="api-show-inherited">
+            <input type="checkbox" id="api-show-inherited" checked>
+            Inherited
+        </label>
+
+        <label for="api-show-protected">
+            <input type="checkbox" id="api-show-protected">
+            Protected
+        </label>
+
+        <label for="api-show-private">
+            <input type="checkbox" id="api-show-private">
+            Private
+        </label>
+        <label for="api-show-deprecated">
+            <input type="checkbox" id="api-show-deprecated">
+            Deprecated
+        </label>
+
+    </div>
+
+
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+                        <h1 class="file-heading">File: physics/PhysicsEngine.js</h1>
+
+<div class="file">
+    <pre class="code prettyprint linenums">
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/.
+ *
+ * @license MPL 2.0
+ * @copyright Famous Industries, Inc. 2014
+ */
+define(function(require, exports, module) {
+    var EventHandler = require(&#x27;famous/core/EventHandler&#x27;);
+
+    /**
+     * The Physics Engine is responsible for mediating Bodies and their
+     * interaction with forces and constraints. The Physics Engine handles the
+     * logic of adding and removing bodies, updating their state of the over
+     * time.
+     *
+     * @class PhysicsEngine
+     * @constructor
+     * @param optoins {Object} options
+     */
+    function PhysicsEngine(options) {
+        this.options = Object.create(PhysicsEngine.DEFAULT_OPTIONS);
+        if (options) this.setOptions(options);
+
+        this._particles      = [];   //list of managed particles
+        this._bodies         = [];   //list of managed bodies
+        this._agents         = {};   //hash of managed agents
+        this._forces         = [];   //list of IDs of agents that are forces
+        this._constraints    = [];   //list of IDs of agents that are constraints
+
+        this._buffer         = 0.0;
+        this._timestamp      = 17;
+        this._minTimeStep    = 1000 / 120;
+        this._maxTimestep    = 17;
+        this._prevTime       = now();
+        this._isSleeping     = false;
+        this._eventHandler   = null;
+        this._currAgentId    = 0;
+        this._hasBodies      = false;
+    }
+
+    /**
+     * @property PhysicsEngine.DEFAULT_OPTIONS
+     * @type Object
+     * @protected
+     * @static
+     */
+    PhysicsEngine.DEFAULT_OPTIONS = {
+
+        /**
+         * The number of iterations the engine takes to resolve constraints
+         * @attribute constraintSteps
+         * @type Number
+         */
+        constraintSteps : 1,
+
+        /**
+         * The energy threshold before the Engine stops updating
+         * @attribute sleepTolerance
+         * @type Number
+         */
+        sleepTolerance  : 1e-7
+    };
+
+    var now = (function() {
+        return Date.now;
+    })();
+
+    /**
+     * Options setter
+     * @method setOptions
+     * @param options {Object}
+     */
+    PhysicsEngine.prototype.setOptions = function setOptions(opts) {
+        for (var key in opts) if (this.options[key]) this.options[key] = opts[key];
+    };
+
+    /**
+     * Method to add a physics body to the engine. Necessary to update the
+     * body over time.
+     *
+     * @method addBody
+     * @param body {Body}
+     * @return body {Body}
+     */
+    PhysicsEngine.prototype.addBody = function addBody(body) {
+        body._engine = this;
+        if (body.isBody) {
+            this._bodies.push(body);
+            this._hasBodies = true;
+        }
+        else this._particles.push(body);
+        return body;
+    };
+
+    /**
+     * Remove a body from the engine. Detaches body from all forces and
+     * constraints.
+     *
+     * @method removeBody
+     * @param body {Body}
+     */
+    PhysicsEngine.prototype.removeBody = function removeBody(body) {
+        var array = (body.isBody) ? this._bodies : this._particles;
+        var index = array.indexOf(body);
+        if (index &gt; -1) {
+            for (var i = 0; i &lt; Object.keys(this._agents); i++) this.detachFrom(i, body);
+            array.splice(index,1);
+        }
+        if (this.getBodies().length === 0) this._hasBodies = false;
+    };
+
+    function _mapAgentArray(agent) {
+        if (agent.applyForce)      return this._forces;
+        if (agent.applyConstraint) return this._constraints;
+    }
+
+    function _attachOne(agent, targets, source) {
+        if (targets === undefined) targets = this.getParticlesAndBodies();
+        if (!(targets instanceof Array)) targets = [targets];
+
+        this._agents[this._currAgentId] = {
+            agent   : agent,
+            targets : targets,
+            source  : source
+        };
+
+        _mapAgentArray.call(this, agent).push(this._currAgentId);
+        return this._currAgentId++;
+    }
+
+    /**
+     * Attaches a force or constraint to a Body. Returns an AgentId of the
+     * attached agent which can be used to detach the agent.
+     *
+     * @method attach
+     * @param agent {Agent|Array.Agent} A force, constraint, or array of them.
+     * @param [targets=All] {Body|Array.Body} The Body or Bodies affected by the agent
+     * @param [source] {Body} The source of the agent
+     * @return AgentId {Number}
+     */
+    PhysicsEngine.prototype.attach = function attach(agents, targets, source) {
+        if (agents instanceof Array) {
+            var agentIDs = [];
+            for (var i = 0; i &lt; agents.length; i++)
+                agentIDs[i] = _attachOne.call(this, agents[i], targets, source);
+            return agentIDs;
+        }
+        else return _attachOne.call(this, agents, targets, source);
+    };
+
+    /**
+     * Append a body to the targets of a previously defined physics agent.
+     *
+     * @method attachTo
+     * @param agentID {AgentId} The agentId of a previously defined agent
+     * @param target {Body} The Body affected by the agent
+     */
+    PhysicsEngine.prototype.attachTo = function attachTo(agentID, target) {
+        _getBoundAgent.call(this, agentID).targets.push(target);
+    };
+
+    /**
+     * Undoes PhysicsEngine.attach. Removes an agent and its associated
+     * effect on its affected Bodies.
+     *
+     * @method detach
+     * @param agentID {AgentId} The agentId of a previously defined agent
+     */
+    PhysicsEngine.prototype.detach = function detach(id) {
+        // detach from forces/constraints array
+        var agent = this.getAgent(id);
+        var agentArray = _mapAgentArray.call(this, agent);
+        var index = agentArray.indexOf(id);
+        agentArray.splice(index,1);
+
+        // detach agents array
+        delete this._agents[id];
+    };
+
+    /**
+     * Remove a single Body from a previously defined agent.
+     *
+     * @method detach
+     * @param agentID {AgentId} The agentId of a previously defined agent
+     * @param target {Body} The body to remove from the agent
+     */
+    PhysicsEngine.prototype.detachFrom = function detachFrom(id, target) {
+        var boundAgent = _getBoundAgent.call(this, id);
+        if (boundAgent.source === target) this.detach(id);
+        else {
+            var targets = boundAgent.targets;
+            var index = targets.indexOf(target);
+            if (index &gt; -1) targets.splice(index,1);
+        }
+    };
+
+    /**
+     * A convenience method to give the Physics Engine a clean slate of
+     * agents. Preserves all added Body objects.
+     *
+     * @method detachAll
+     */
+    PhysicsEngine.prototype.detachAll = function detachAll() {
+        this._agents        = {};
+        this._forces        = [];
+        this._constraints   = [];
+        this._currAgentId   = 0;
+    };
+
+    function _getBoundAgent(id) {
+        return this._agents[id];
+    }
+
+    /**
+     * Returns the corresponding agent given its agentId.
+     *
+     * @method getAgent
+     * @param id {AgentId}
+     */
+    PhysicsEngine.prototype.getAgent = function getAgent(id) {
+        return _getBoundAgent.call(this, id).agent;
+    };
+
+    /**
+     * Returns all particles that are currently managed by the Physics Engine.
+     *
+     * @method getParticles
+     * @return particles {Array.Particles}
+     */
+    PhysicsEngine.prototype.getParticles = function getParticles() {
+        return this._particles;
+    };
+
+    /**
+     * Returns all bodies, except particles, that are currently managed by the Physics Engine.
+     *
+     * @method getBodies
+     * @return bodies {Array.Bodies}
+     */
+    PhysicsEngine.prototype.getBodies = function getBodies() {
+        return this._bodies;
+    };
+
+    /**
+     * Returns all bodies that are currently managed by the Physics Engine.
+     *
+     * @method getBodies
+     * @return bodies {Array.Bodies}
+     */
+    PhysicsEngine.prototype.getParticlesAndBodies = function getParticlesAndBodies() {
+        return this.getParticles().concat(this.getBodies());
+    };
+
+    /**
+     * Iterates over every Particle and applies a function whose first
+     * argument is the Particle
+     *
+     * @method forEachParticle
+     * @param fn {Function} Function to iterate over
+     * @param [dt] {Number} Delta time
+     */
+    PhysicsEngine.prototype.forEachParticle = function forEachParticle(fn, dt) {
+        var particles = this.getParticles();
+        for (var index = 0, len = particles.length; index &lt; len; index++)
+            fn.call(this, particles[index], dt);
+    };
+
+    /**
+     * Iterates over every Body that isn&#x27;t a Particle and applies
+     * a function whose first argument is the Body
+     *
+     * @method forEachBody
+     * @param fn {Function} Function to iterate over
+     * @param [dt] {Number} Delta time
+     */
+    PhysicsEngine.prototype.forEachBody = function forEachBody(fn, dt) {
+        if (!this._hasBodies) return;
+        var bodies = this.getBodies();
+        for (var index = 0, len = bodies.length; index &lt; len; index++)
+            fn.call(this, bodies[index], dt);
+    };
+
+    /**
+     * Iterates over every Body and applies a function whose first
+     * argument is the Body
+     *
+     * @method forEach
+     * @param fn {Function} Function to iterate over
+     * @param [dt] {Number} Delta time
+     */
+    PhysicsEngine.prototype.forEach = function forEach(fn, dt) {
+        this.forEachParticle(fn, dt);
+        this.forEachBody(fn, dt);
+    };
+
+    function _updateForce(index) {
+        var boundAgent = _getBoundAgent.call(this, this._forces[index]);
+        boundAgent.agent.applyForce(boundAgent.targets, boundAgent.source);
+    }
+
+    function _updateForces() {
+        for (var index = this._forces.length - 1; index &gt; -1; index--)
+            _updateForce.call(this, index);
+    }
+
+    function _updateConstraint(index, dt) {
+        var boundAgent = this._agents[this._constraints[index]];
+        return boundAgent.agent.applyConstraint(boundAgent.targets, boundAgent.source, dt);
+    }
+
+    function _updateConstraints(dt) {
+        var iteration = 0;
+        while (iteration &lt; this.options.constraintSteps) {
+            for (var index = this._constraints.length - 1; index &gt; -1; index--)
+                _updateConstraint.call(this, index, dt);
+            iteration++;
+        }
+    }
+
+    function _updateVelocities(particle, dt) {
+        particle.integrateVelocity(dt);
+    }
+
+    function _updateAngularVelocities(body, dt) {
+        body.integrateAngularMomentum(dt);
+        body.updateAngularVelocity();
+    }
+
+    function _updateOrientations(body, dt) {
+        body.integrateOrientation(dt);
+    }
+
+    function _updatePositions(particle, dt) {
+        particle.integratePosition(dt);
+        particle.emit(&#x27;update&#x27;, particle);
+    }
+
+    function _integrate(dt) {
+        _updateForces.call(this, dt);
+        this.forEach(_updateVelocities, dt);
+        this.forEachBody(_updateAngularVelocities, dt);
+        _updateConstraints.call(this, dt);
+        this.forEachBody(_updateOrientations, dt);
+        this.forEach(_updatePositions, dt);
+    }
+
+    function _getEnergyParticles() {
+        var energy = 0.0;
+        var particleEnergy = 0.0;
+        this.forEach(function(particle) {
+            particleEnergy = particle.getEnergy();
+            energy += particleEnergy;
+            if (particleEnergy &lt; particle.sleepTolerance) particle.sleep();
+        });
+        return energy;
+    }
+
+    function _getEnergyForces() {
+        var energy = 0;
+        for (var index = this._forces.length - 1; index &gt; -1; index--)
+            energy += this._forces[index].getEnergy() || 0.0;
+        return energy;
+    }
+
+    function _getEnergyConstraints() {
+        var energy = 0;
+        for (var index = this._constraints.length - 1; index &gt; -1; index--)
+            energy += this._constraints[index].getEnergy() || 0.0;
+        return energy;
+    }
+
+    /**
+     * Calculates the kinetic energy of all Body objects and potential energy
+     * of all attached agents.
+     *
+     * TODO: implement.
+     * @method getEnergy
+     * @return energy {Number}
+     */
+    PhysicsEngine.prototype.getEnergy = function getEnergy() {
+        return _getEnergyParticles.call(this) + _getEnergyForces.call(this) + _getEnergyConstraints.call(this);
+    };
+
+    /**
+     * Updates all Body objects managed by the physics engine over the
+     * time duration since the last time step was called.
+     *
+     * @method step
+     */
+    PhysicsEngine.prototype.step = function step() {
+//        if (this.getEnergy() &lt; this.options.sleepTolerance) {
+//            this.sleep();
+//            return;
+//        };
+
+        //set current frame&#x27;s time
+        var currTime = now();
+
+        //milliseconds elapsed since last frame
+        var dtFrame = currTime - this._prevTime;
+
+        this._prevTime = currTime;
+
+        if (dtFrame &lt; this._minTimeStep) return;
+        if (dtFrame &gt; this._maxTimeStep) dtFrame = this._maxTimestep;
+
+        //robust integration
+//        this._buffer += dtFrame;
+//        while (this._buffer &gt; this._timestep){
+//            _integrate.call(this, this._timestep);
+//            this._buffer -= this._timestep;
+//        };
+//        _integrate.call(this, this._buffer);
+//        this._buffer = 0.0;
+        _integrate.call(this, this._timestamp);
+
+//        this.emit(&#x27;update&#x27;, this);
+    };
+
+    /**
+     * Tells whether the Physics Engine is sleeping or awake.
+     * @method isSleeping
+     * @return {Boolean}
+     */
+    PhysicsEngine.prototype.isSleeping = function isSleeping() {
+        return this._isSleeping;
+    };
+
+    /**
+     * Stops the Physics Engine from updating. Emits an &#x27;end&#x27; event.
+     * @method sleep
+     */
+    PhysicsEngine.prototype.sleep = function sleep() {
+        this.emit(&#x27;end&#x27;, this);
+        this._isSleeping = true;
+    };
+
+    /**
+     * Starts the Physics Engine from updating. Emits an &#x27;start&#x27; event.
+     * @method wake
+     */
+    PhysicsEngine.prototype.wake = function wake() {
+        this._prevTime = now();
+        this.emit(&#x27;start&#x27;, this);
+        this._isSleeping = false;
+    };
+
+    PhysicsEngine.prototype.emit = function emit(type, data) {
+        if (this._eventHandler === null) return;
+        this._eventHandler.emit(type, data);
+    };
+
+    PhysicsEngine.prototype.on = function on(event, fn) {
+        if (this._eventHandler === null) this._eventHandler = new EventHandler();
+        this._eventHandler.on(event, fn);
+    };
+
+    module.exports = PhysicsEngine;
+});
+
+    </pre>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>

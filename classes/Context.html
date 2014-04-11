@@ -1,0 +1,1780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Context</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+            
+                <h1><img src="../assets/css/logo.png" title=""></h1>
+            
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em>API Docs for: </em>
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+    <h2 class="off-left">APIs</h2>
+    <div id="api-tabview" class="tabview">
+        <ul class="tabs">
+            <li><a href="#api-classes">Classes</a></li>
+            <li><a href="#api-modules">Modules</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+        </div>
+
+        <div id="api-tabview-panel">
+            <ul id="api-classes" class="apis classes">
+            
+                <li><a href="../classes/Body.html">Body</a></li>
+            
+                <li><a href="../classes/CachedMap.html">CachedMap</a></li>
+            
+                <li><a href="../classes/CanvasSurface.html">CanvasSurface</a></li>
+            
+                <li><a href="../classes/Circle.html">Circle</a></li>
+            
+                <li><a href="../classes/Collision.html">Collision</a></li>
+            
+                <li><a href="../classes/Constraint.html">Constraint</a></li>
+            
+                <li><a href="../classes/ContainerSurface.html">ContainerSurface</a></li>
+            
+                <li><a href="../classes/Context.html">Context</a></li>
+            
+                <li><a href="../classes/Curve.html">Curve</a></li>
+            
+                <li><a href="../classes/Deck.html">Deck</a></li>
+            
+                <li><a href="../classes/Distance.html">Distance</a></li>
+            
+                <li><a href="../classes/Drag.html">Drag</a></li>
+            
+                <li><a href="../classes/Draggable.html">Draggable</a></li>
+            
+                <li><a href="../classes/EdgeSwapper.html">EdgeSwapper</a></li>
+            
+                <li><a href="../classes/ElementAllocator.html">ElementAllocator</a></li>
+            
+                <li><a href="../classes/Engine.html">Engine</a></li>
+            
+                <li><a href="../classes/Entity.html">Entity</a></li>
+            
+                <li><a href="../classes/EventArbiter.html">EventArbiter</a></li>
+            
+                <li><a href="../classes/EventEmitter.html">EventEmitter</a></li>
+            
+                <li><a href="../classes/EventFilter.html">EventFilter</a></li>
+            
+                <li><a href="../classes/EventHandler.html">EventHandler</a></li>
+            
+                <li><a href="../classes/EventMapper.html">EventMapper</a></li>
+            
+                <li><a href="../classes/Fader.html">Fader</a></li>
+            
+                <li><a href="../classes/Flipper.html">Flipper</a></li>
+            
+                <li><a href="../classes/Force.html">Force</a></li>
+            
+                <li><a href="../classes/GenericSync.html">GenericSync</a></li>
+            
+                <li><a href="../classes/GridLayout.html">GridLayout</a></li>
+            
+                <li><a href="../classes/Group.html">Group</a></li>
+            
+                <li><a href="../classes/HeaderFooterLayout.html">HeaderFooterLayout</a></li>
+            
+                <li><a href="../classes/ImageSurface.html">ImageSurface</a></li>
+            
+                <li><a href="../classes/InputSurface.html">InputSurface</a></li>
+            
+                <li><a href="../classes/KeyCodes.html">KeyCodes</a></li>
+            
+                <li><a href="../classes/Lightbox.html">Lightbox</a></li>
+            
+                <li><a href="../classes/Matrix.html">Matrix</a></li>
+            
+                <li><a href="../classes/Modifier.html">Modifier</a></li>
+            
+                <li><a href="../classes/ModifierChain.html">ModifierChain</a></li>
+            
+                <li><a href="../classes/MouseSync.html">MouseSync</a></li>
+            
+                <li><a href="../classes/MultipleTransition.html">MultipleTransition</a></li>
+            
+                <li><a href="../classes/NavigationBar.html">NavigationBar</a></li>
+            
+                <li><a href="../classes/OptionsManager.html">OptionsManager</a></li>
+            
+                <li><a href="../classes/Particle.html">Particle</a></li>
+            
+                <li><a href="../classes/PhysicsEngine.html">PhysicsEngine</a></li>
+            
+                <li><a href="../classes/PinchSync.html">PinchSync</a></li>
+            
+                <li><a href="../classes/Quaternion.html">Quaternion</a></li>
+            
+                <li><a href="../classes/Random.html">Random</a></li>
+            
+                <li><a href="../classes/RenderController.html">RenderController</a></li>
+            
+                <li><a href="../classes/RenderNode.html">RenderNode</a></li>
+            
+                <li><a href="../classes/Repulsion.html">Repulsion</a></li>
+            
+                <li><a href="../classes/RotateSync.html">RotateSync</a></li>
+            
+                <li><a href="../classes/RotationalDrag.html">RotationalDrag</a></li>
+            
+                <li><a href="../classes/RotationalSpring.html">RotationalSpring</a></li>
+            
+                <li><a href="../classes/ScaleSync.html">ScaleSync</a></li>
+            
+                <li><a href="../classes/Scene.html">Scene</a></li>
+            
+                <li><a href="../classes/ScrollContainer.html">ScrollContainer</a></li>
+            
+                <li><a href="../classes/Scroller.html">Scroller</a></li>
+            
+                <li><a href="../classes/ScrollSync.html">ScrollSync</a></li>
+            
+                <li><a href="../classes/Scrollview.html">Scrollview</a></li>
+            
+                <li><a href="../classes/Snap.html">Snap</a></li>
+            
+                <li><a href="../classes/SnapTransition.html">SnapTransition</a></li>
+            
+                <li><a href="../classes/SpecParser.html">SpecParser</a></li>
+            
+                <li><a href="../classes/Spring.html">Spring</a></li>
+            
+                <li><a href="../classes/SpringTransition.html">SpringTransition</a></li>
+            
+                <li><a href="../classes/StateModifier.html">StateModifier</a></li>
+            
+                <li><a href="../classes/Surface.html">Surface</a></li>
+            
+                <li><a href="../classes/SymplecticEuler.html">SymplecticEuler</a></li>
+            
+                <li><a href="../classes/TabBar.html">TabBar</a></li>
+            
+                <li><a href="../classes/Timer.html">Timer</a></li>
+            
+                <li><a href="../classes/TouchSync.html">TouchSync</a></li>
+            
+                <li><a href="../classes/TouchTracker.html">TouchTracker</a></li>
+            
+                <li><a href="../classes/Transform.html">Transform</a></li>
+            
+                <li><a href="../classes/Transitionable.html">Transitionable</a></li>
+            
+                <li><a href="../classes/TransitionableTransform.html">TransitionableTransform</a></li>
+            
+                <li><a href="../classes/TweenTransition.html">TweenTransition</a></li>
+            
+                <li><a href="../classes/TwoFingerSync.html">TwoFingerSync</a></li>
+            
+                <li><a href="../classes/Utilities.html">Utilities</a></li>
+            
+                <li><a href="../classes/Utility.html">Utility</a></li>
+            
+                <li><a href="../classes/Vector.html">Vector</a></li>
+            
+                <li><a href="../classes/VectorField.html">VectorField</a></li>
+            
+                <li><a href="../classes/VideoSurface.html">VideoSurface</a></li>
+            
+                <li><a href="../classes/View.html">View</a></li>
+            
+                <li><a href="../classes/ViewSequence.html">ViewSequence</a></li>
+            
+                <li><a href="../classes/Wall.html">Wall</a></li>
+            
+                <li><a href="../classes/Walls.html">Walls</a></li>
+            
+                <li><a href="../classes/WallTransition.html">WallTransition</a></li>
+            
+            </ul>
+
+            <ul id="api-modules" class="apis modules">
+            
+            </ul>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+        Show:
+        <label for="api-show-inherited">
+            <input type="checkbox" id="api-show-inherited" checked>
+            Inherited
+        </label>
+
+        <label for="api-show-protected">
+            <input type="checkbox" id="api-show-protected">
+            Protected
+        </label>
+
+        <label for="api-show-private">
+            <input type="checkbox" id="api-show-private">
+            Private
+        </label>
+        <label for="api-show-deprecated">
+            <input type="checkbox" id="api-show-deprecated">
+            Deprecated
+        </label>
+
+    </div>
+
+
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+                        <h1>Context Class</h1>
+<div class="box meta">
+    
+
+    
+
+    
+        <div class="foundat">
+            Defined in: <a href="../files/core_Context.js.html#l23"><code>core&#x2F;Context.js:23</code></a>
+        </div>
+    
+
+    
+
+    
+</div>
+
+
+
+<div class="box intro">
+    <p>The top-level container for a Famous-renderable piece of the document.
+  It is directly updated by the process-wide Engine object, and manages one
+  render tree root, which can contain other renderables.</p>
+
+</div>
+
+
+    <div class="constructor">
+        <h2>Constructor</h2>
+        <div id="method_Context" class="method item private">
+    <h3 class="name"><code>Context</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>container</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+
+    
+
+    
+        <span class="flag private">private</span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/core_Context.js.html#l23"><code>core&#x2F;Context.js:23</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">container</code>
+                        <span class="type">Node</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>Element in which content will be inserted</p>
+
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+
+    
+</div>
+
+    </div>
+
+
+<div id="classdocs" class="tabview">
+    <ul class="api-class-tabs">
+        <li class="api-class-tab index"><a href="#index">Index</a></li>
+
+        
+            <li class="api-class-tab methods"><a href="#methods">Methods</a></li>
+        
+        
+        
+        
+    </ul>
+
+    <div>
+        <div id="index" class="api-class-tabpanel index">
+            <h2 class="off-left">Item Index</h2>
+
+            
+                <div class="index-section methods">
+                    <h3>Methods</h3>
+
+                    <ul class="index-list methods">
+                        
+                            <li class="index-item method">
+                                <a href="#method_&quot;on&quot;">&quot;on&quot;</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#method_add">add</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#method_emit">emit</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#method_getPerspective">getPerspective</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#method_getPerspective">getPerspective</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#method_getSize">getSize</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#method_migrate">migrate</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#method_pipe">pipe</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#method_removeListener">removeListener</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#method_setSize">setSize</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#method_unpipe">unpipe</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method private">
+                                <a href="#method_update">update</a>
+
+                                
+                                
+                            </li>
+                        
+                    </ul>
+                </div>
+            
+
+            
+
+            
+
+            
+        </div>
+
+        
+            <div id="methods" class="api-class-tabpanel">
+                <h2 class="off-left">Methods</h2>
+
+                
+                    <div id="method_&quot;on&quot;" class="method item">
+    <h3 class="name"><code>&quot;on&quot;</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>type</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>handler</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+        <span class="returns-inline">
+            <span class="type"><a href="../classes/EventHandler.html" class="crosslink">EventHandler</a></span>
+        </span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/core_Context.js.html#l172"><code>core&#x2F;Context.js:172</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Bind a callback function to an event type handled by this object.</p>
+
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">type</code>
+                        <span class="type">String</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>event type key (for example, &#39;click&#39;)</p>
+
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">handler</code>
+                        <span class="type">Function(string, Object)</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>callback</p>
+
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                
+                    
+                        <span class="type"><a href="../classes/EventHandler.html" class="crosslink">EventHandler</a></span>:
+                    
+                    <p>this</p>
+
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+                
+                    <div id="method_add" class="method item">
+    <h3 class="name"><code>add</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>obj</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+        <span class="returns-inline">
+            <span class="type"><a href="../classes/RenderNode.html" class="crosslink">RenderNode</a></span>
+        </span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/core_Context.js.html#l63"><code>core&#x2F;Context.js:63</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Add renderables to this Context&#39;s render tree.</p>
+
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">obj</code>
+                        <span class="type">Object</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>renderable object</p>
+
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                
+                    
+                        <span class="type"><a href="../classes/RenderNode.html" class="crosslink">RenderNode</a></span>:
+                    
+                    <p>RenderNode wrapping this object, if not already a RenderNode</p>
+
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+                
+                    <div id="method_emit" class="method item">
+    <h3 class="name"><code>emit</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>type</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>event</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+        <span class="returns-inline">
+            <span class="type"><a href="../classes/EventHandler.html" class="crosslink">EventHandler</a></span>
+        </span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/core_Context.js.html#l158"><code>core&#x2F;Context.js:158</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Trigger an event, sending to all downstream handlers
+  listening for provided &#39;type&#39; key.</p>
+
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">type</code>
+                        <span class="type">String</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>event type key (for example, &#39;click&#39;)</p>
+
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">event</code>
+                        <span class="type">Object</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>event data</p>
+
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                
+                    
+                        <span class="type"><a href="../classes/EventHandler.html" class="crosslink">EventHandler</a></span>:
+                    
+                    <p>this</p>
+
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+                
+                    <div id="method_getPerspective" class="method item">
+    <h3 class="name"><code>getPerspective</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>perspective</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code class="optional">[transition]</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>callback</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/core_Context.js.html#l146"><code>core&#x2F;Context.js:146</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Set current perspective of this context in pixels.</p>
+
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">perspective</code>
+                        <span class="type">Number</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>in pixels</p>
+
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name optional">[transition]</code>
+                        <span class="type">Object</span>
+                        <span class="flag optional" title="This parameter is optional.">optional</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>Transitionable object for applying the change</p>
+
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">callback</code>
+                        <span class="type">Function(Object)</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>function called on completion of transition</p>
+
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="method_getPerspective" class="method item">
+    <h3 class="name"><code>getPerspective</code></h3>
+
+    
+        <span class="paren">()</span>
+    
+
+    
+        <span class="returns-inline">
+            <span class="type">Number</span>
+        </span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/core_Context.js.html#l136"><code>core&#x2F;Context.js:136</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Get current perspective of this context in pixels.</p>
+
+    </div>
+
+    
+
+    
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                
+                    
+                        <span class="type">Number</span>:
+                    
+                    <p>depth perspective in pixels</p>
+
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+                
+                    <div id="method_getSize" class="method item">
+    <h3 class="name"><code>getSize</code></h3>
+
+    
+        <span class="paren">()</span>
+    
+
+    
+        <span class="returns-inline">
+            <span class="type">Array.Number</span>
+        </span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/core_Context.js.html#l88"><code>core&#x2F;Context.js:88</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Gets viewport size for Context.</p>
+
+    </div>
+
+    
+
+    
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                
+                    
+                        <span class="type">Array.Number</span>:
+                    
+                    <p>viewport size as [width, height]</p>
+
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+                
+                    <div id="method_migrate" class="method item">
+    <h3 class="name"><code>migrate</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>container</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/core_Context.js.html#l75"><code>core&#x2F;Context.js:75</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Move this Context to another containing document element.</p>
+
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">container</code>
+                        <span class="type">Node</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>Element to which content will be migrated</p>
+
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="method_pipe" class="method item">
+    <h3 class="name"><code>pipe</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>target</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+        <span class="returns-inline">
+            <span class="type"><a href="../classes/EventHandler.html" class="crosslink">EventHandler</a></span>
+        </span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/core_Context.js.html#l199"><code>core&#x2F;Context.js:199</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Add event handler object to set of downstream handlers.</p>
+
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">target</code>
+                        <span class="type"><a href="../classes/EventHandler.html" class="crosslink">EventHandler</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>event handler target object</p>
+
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                
+                    
+                        <span class="type"><a href="../classes/EventHandler.html" class="crosslink">EventHandler</a></span>:
+                    
+                    <p>passed event handler</p>
+
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+                
+                    <div id="method_removeListener" class="method item">
+    <h3 class="name"><code>removeListener</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>type</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>handler</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+        <span class="returns-inline">
+            <span class="type"><a href="../classes/EventHandler.html" class="crosslink">EventHandler</a></span>
+        </span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/core_Context.js.html#l185"><code>core&#x2F;Context.js:185</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Unbind an event by type and handler.
+  This undoes the work of &quot;on&quot;.</p>
+
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">type</code>
+                        <span class="type">String</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>event type key (for example, &#39;click&#39;)</p>
+
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">handler</code>
+                        <span class="type">Function</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>function object to remove</p>
+
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                
+                    
+                        <span class="type"><a href="../classes/EventHandler.html" class="crosslink">EventHandler</a></span>:
+                    
+                    <p>internal event handler object (for chaining)</p>
+
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+                
+                    <div id="method_setSize" class="method item">
+    <h3 class="name"><code>setSize</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>size</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/core_Context.js.html#l99"><code>core&#x2F;Context.js:99</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Sets viewport size for Context.</p>
+
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">size</code>
+                        <span class="type">Array.Number</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>[width, height].  If unspecified, use size of root document element.</p>
+
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="method_unpipe" class="method item">
+    <h3 class="name"><code>unpipe</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>target</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+        <span class="returns-inline">
+            <span class="type"><a href="../classes/EventHandler.html" class="crosslink">EventHandler</a></span>
+        </span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/core_Context.js.html#l211"><code>core&#x2F;Context.js:211</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Remove handler object from set of downstream handlers.
+  Undoes work of &quot;pipe&quot;.</p>
+
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">target</code>
+                        <span class="type"><a href="../classes/EventHandler.html" class="crosslink">EventHandler</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>target handler object</p>
+
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                
+                    
+                        <span class="type"><a href="../classes/EventHandler.html" class="crosslink">EventHandler</a></span>:
+                    
+                    <p>provided target</p>
+
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+                
+                    <div id="method_update" class="method item private">
+    <h3 class="name"><code>update</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>contextParameters</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+
+    
+
+    
+        <span class="flag private">private</span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/core_Context.js.html#l112"><code>core&#x2F;Context.js:112</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Commit this Context&#39;s content changes to the document.</p>
+
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">contextParameters</code>
+                        <span class="type">Object</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>engine commit specification</p>
+
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+
+    
+</div>
+
+                
+            </div>
+        
+
+        
+
+        
+
+        
+    </div>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>

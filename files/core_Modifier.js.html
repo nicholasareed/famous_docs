@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>core/Modifier.js</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+            
+                <h1><img src="../assets/css/logo.png" title=""></h1>
+            
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em>API Docs for: </em>
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+    <h2 class="off-left">APIs</h2>
+    <div id="api-tabview" class="tabview">
+        <ul class="tabs">
+            <li><a href="#api-classes">Classes</a></li>
+            <li><a href="#api-modules">Modules</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+        </div>
+
+        <div id="api-tabview-panel">
+            <ul id="api-classes" class="apis classes">
+            
+                <li><a href="../classes/Body.html">Body</a></li>
+            
+                <li><a href="../classes/CachedMap.html">CachedMap</a></li>
+            
+                <li><a href="../classes/CanvasSurface.html">CanvasSurface</a></li>
+            
+                <li><a href="../classes/Circle.html">Circle</a></li>
+            
+                <li><a href="../classes/Collision.html">Collision</a></li>
+            
+                <li><a href="../classes/Constraint.html">Constraint</a></li>
+            
+                <li><a href="../classes/ContainerSurface.html">ContainerSurface</a></li>
+            
+                <li><a href="../classes/Context.html">Context</a></li>
+            
+                <li><a href="../classes/Curve.html">Curve</a></li>
+            
+                <li><a href="../classes/Deck.html">Deck</a></li>
+            
+                <li><a href="../classes/Distance.html">Distance</a></li>
+            
+                <li><a href="../classes/Drag.html">Drag</a></li>
+            
+                <li><a href="../classes/Draggable.html">Draggable</a></li>
+            
+                <li><a href="../classes/EdgeSwapper.html">EdgeSwapper</a></li>
+            
+                <li><a href="../classes/ElementAllocator.html">ElementAllocator</a></li>
+            
+                <li><a href="../classes/Engine.html">Engine</a></li>
+            
+                <li><a href="../classes/Entity.html">Entity</a></li>
+            
+                <li><a href="../classes/EventArbiter.html">EventArbiter</a></li>
+            
+                <li><a href="../classes/EventEmitter.html">EventEmitter</a></li>
+            
+                <li><a href="../classes/EventFilter.html">EventFilter</a></li>
+            
+                <li><a href="../classes/EventHandler.html">EventHandler</a></li>
+            
+                <li><a href="../classes/EventMapper.html">EventMapper</a></li>
+            
+                <li><a href="../classes/Fader.html">Fader</a></li>
+            
+                <li><a href="../classes/Flipper.html">Flipper</a></li>
+            
+                <li><a href="../classes/Force.html">Force</a></li>
+            
+                <li><a href="../classes/GenericSync.html">GenericSync</a></li>
+            
+                <li><a href="../classes/GridLayout.html">GridLayout</a></li>
+            
+                <li><a href="../classes/Group.html">Group</a></li>
+            
+                <li><a href="../classes/HeaderFooterLayout.html">HeaderFooterLayout</a></li>
+            
+                <li><a href="../classes/ImageSurface.html">ImageSurface</a></li>
+            
+                <li><a href="../classes/InputSurface.html">InputSurface</a></li>
+            
+                <li><a href="../classes/KeyCodes.html">KeyCodes</a></li>
+            
+                <li><a href="../classes/Lightbox.html">Lightbox</a></li>
+            
+                <li><a href="../classes/Matrix.html">Matrix</a></li>
+            
+                <li><a href="../classes/Modifier.html">Modifier</a></li>
+            
+                <li><a href="../classes/ModifierChain.html">ModifierChain</a></li>
+            
+                <li><a href="../classes/MouseSync.html">MouseSync</a></li>
+            
+                <li><a href="../classes/MultipleTransition.html">MultipleTransition</a></li>
+            
+                <li><a href="../classes/NavigationBar.html">NavigationBar</a></li>
+            
+                <li><a href="../classes/OptionsManager.html">OptionsManager</a></li>
+            
+                <li><a href="../classes/Particle.html">Particle</a></li>
+            
+                <li><a href="../classes/PhysicsEngine.html">PhysicsEngine</a></li>
+            
+                <li><a href="../classes/PinchSync.html">PinchSync</a></li>
+            
+                <li><a href="../classes/Quaternion.html">Quaternion</a></li>
+            
+                <li><a href="../classes/Random.html">Random</a></li>
+            
+                <li><a href="../classes/RenderController.html">RenderController</a></li>
+            
+                <li><a href="../classes/RenderNode.html">RenderNode</a></li>
+            
+                <li><a href="../classes/Repulsion.html">Repulsion</a></li>
+            
+                <li><a href="../classes/RotateSync.html">RotateSync</a></li>
+            
+                <li><a href="../classes/RotationalDrag.html">RotationalDrag</a></li>
+            
+                <li><a href="../classes/RotationalSpring.html">RotationalSpring</a></li>
+            
+                <li><a href="../classes/ScaleSync.html">ScaleSync</a></li>
+            
+                <li><a href="../classes/Scene.html">Scene</a></li>
+            
+                <li><a href="../classes/ScrollContainer.html">ScrollContainer</a></li>
+            
+                <li><a href="../classes/Scroller.html">Scroller</a></li>
+            
+                <li><a href="../classes/ScrollSync.html">ScrollSync</a></li>
+            
+                <li><a href="../classes/Scrollview.html">Scrollview</a></li>
+            
+                <li><a href="../classes/Snap.html">Snap</a></li>
+            
+                <li><a href="../classes/SnapTransition.html">SnapTransition</a></li>
+            
+                <li><a href="../classes/SpecParser.html">SpecParser</a></li>
+            
+                <li><a href="../classes/Spring.html">Spring</a></li>
+            
+                <li><a href="../classes/SpringTransition.html">SpringTransition</a></li>
+            
+                <li><a href="../classes/StateModifier.html">StateModifier</a></li>
+            
+                <li><a href="../classes/Surface.html">Surface</a></li>
+            
+                <li><a href="../classes/SymplecticEuler.html">SymplecticEuler</a></li>
+            
+                <li><a href="../classes/TabBar.html">TabBar</a></li>
+            
+                <li><a href="../classes/Timer.html">Timer</a></li>
+            
+                <li><a href="../classes/TouchSync.html">TouchSync</a></li>
+            
+                <li><a href="../classes/TouchTracker.html">TouchTracker</a></li>
+            
+                <li><a href="../classes/Transform.html">Transform</a></li>
+            
+                <li><a href="../classes/Transitionable.html">Transitionable</a></li>
+            
+                <li><a href="../classes/TransitionableTransform.html">TransitionableTransform</a></li>
+            
+                <li><a href="../classes/TweenTransition.html">TweenTransition</a></li>
+            
+                <li><a href="../classes/TwoFingerSync.html">TwoFingerSync</a></li>
+            
+                <li><a href="../classes/Utilities.html">Utilities</a></li>
+            
+                <li><a href="../classes/Utility.html">Utility</a></li>
+            
+                <li><a href="../classes/Vector.html">Vector</a></li>
+            
+                <li><a href="../classes/VectorField.html">VectorField</a></li>
+            
+                <li><a href="../classes/VideoSurface.html">VideoSurface</a></li>
+            
+                <li><a href="../classes/View.html">View</a></li>
+            
+                <li><a href="../classes/ViewSequence.html">ViewSequence</a></li>
+            
+                <li><a href="../classes/Wall.html">Wall</a></li>
+            
+                <li><a href="../classes/Walls.html">Walls</a></li>
+            
+                <li><a href="../classes/WallTransition.html">WallTransition</a></li>
+            
+            </ul>
+
+            <ul id="api-modules" class="apis modules">
+            
+            </ul>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+        Show:
+        <label for="api-show-inherited">
+            <input type="checkbox" id="api-show-inherited" checked>
+            Inherited
+        </label>
+
+        <label for="api-show-protected">
+            <input type="checkbox" id="api-show-protected">
+            Protected
+        </label>
+
+        <label for="api-show-private">
+            <input type="checkbox" id="api-show-private">
+            Private
+        </label>
+        <label for="api-show-deprecated">
+            <input type="checkbox" id="api-show-deprecated">
+            Deprecated
+        </label>
+
+    </div>
+
+
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+                        <h1 class="file-heading">File: core/Modifier.js</h1>
+
+<div class="file">
+    <pre class="code prettyprint linenums">
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/.
+ *
+ * Owner: mark@famo.us
+ * @license MPL 2.0
+ * @copyright Famous Industries, Inc. 2014
+ */
+
+define(function(require, exports, module) {
+    var Transform = require(&#x27;./Transform&#x27;);
+
+    /* TODO: remove these dependencies when deprecation complete */
+    var Transitionable = require(&#x27;famous/transitions/Transitionable&#x27;);
+    var TransitionableTransform = require(&#x27;famous/transitions/TransitionableTransform&#x27;);
+
+    /**
+     *
+     *  A collection of visual changes to be
+     *    applied to another renderable component. This collection includes a
+     *    transform matrix, an opacity constant, a size, an origin specifier.
+     *    Modifier objects can be added to any RenderNode or object
+     *    capable of displaying renderables.  The Modifier&#x27;s children and descendants
+     *    are transformed by the amounts specified in the Modifier&#x27;s properties.
+     *
+     * @class Modifier
+     * @constructor
+     * @param {Object} [options] overrides of default options
+     * @param {Transform} [options.transform] affine transformation matrix
+     * @param {Number} [options.opacity]
+     * @param {Array.Number} [options.origin] origin adjustment
+     * @param {Array.Number} [options.size] size to apply to descendants
+     */
+    function Modifier(options) {
+        this._transformGetter = null;
+        this._opacityGetter = null;
+        this._originGetter = null;
+        this._sizeGetter = null;
+
+        /* TODO: remove this when deprecation complete */
+        this._legacyStates = {};
+
+        this._output = {
+            transform: Transform.identity,
+            opacity: 1,
+            origin: null,
+            size: null,
+            target: null
+        };
+
+        if (options) {
+            if (options.transform) this.transformFrom(options.transform);
+            if (options.opacity !== undefined) this.opacityFrom(options.opacity);
+            if (options.origin) this.originFrom(options.origin);
+            if (options.size) this.sizeFrom(options.size);
+        }
+    }
+
+    /**
+     * Function, object, or static transform matrix which provides the transform.
+     *   This is evaluated on every tick of the engine.
+     *
+     * @method transformFrom
+     *
+     * @param {Object} transform transform provider object
+     * @return {Modifier} this
+     */
+    Modifier.prototype.transformFrom = function transformFrom(transform) {
+        if (transform instanceof Function) this._transformGetter = transform;
+        else if (transform instanceof Object &amp;&amp; transform.get) this._transformGetter = transform.get.bind(transform);
+        else {
+            this._transformGetter = null;
+            this._output.transform = transform;
+        }
+        return this;
+    };
+
+    /**
+     * Set function, object, or number to provide opacity, in range [0,1].
+     *
+     * @method opacityFrom
+     *
+     * @param {Object} opacity provider object
+     * @return {Modifier} this
+     */
+    Modifier.prototype.opacityFrom = function opacityFrom(opacity) {
+        if (opacity instanceof Function) this._opacityGetter = opacity;
+        else if (opacity instanceof Object &amp;&amp; opacity.get) this._opacityGetter = opacity.get.bind(opacity);
+        else {
+            this._opacityGetter = null;
+            this._output.opacity = opacity;
+        }
+        return this;
+    };
+
+    /**
+     * Set function, object, or numerical array to provide origin, as [x,y],
+     *   where x and y are in the range [0,1].
+     *
+     * @method originFrom
+     *
+     * @param {Object} origin provider object
+     * @return {Modifier} this
+     */
+
+    Modifier.prototype.originFrom = function originFrom(origin) {
+        if (origin instanceof Function) this._originGetter = origin;
+        else if (origin instanceof Object &amp;&amp; origin.get) this._originGetter = origin.get.bind(origin);
+        else {
+            this._originGetter = null;
+            this._output.origin = origin;
+        }
+        return this;
+    };
+
+    /**
+     * Set function, object, or numerical array to provide size, as [width, height].
+     *
+     * @method sizeFrom
+     *
+     * @param {Object} size provider object
+     * @return {Modifier} this
+     */
+    Modifier.prototype.sizeFrom = function sizeFrom(size) {
+        if (size instanceof Function) this._sizeGetter = size;
+        else if (size instanceof Object &amp;&amp; size.get) this._sizeGetter = size.get.bind(size);
+        else {
+            this._sizeGetter = null;
+            this._output.size = size;
+        }
+        return this;
+    };
+
+     /**
+     * Deprecated: Prefer transformFrom with static Transform, or use a TransitionableTransform.
+     * @deprecated
+     * @method setTransform
+     *
+     * @param {Transform} transform Transform to transition to
+     * @param {Transitionable} transition Valid transitionable object
+     * @param {Function} callback callback to call after transition completes
+     * @return {Modifier} this
+     */
+    Modifier.prototype.setTransform = function setTransform(transform, transition, callback) {
+        if (transition || this._legacyStates.transform) {
+            if (!this._legacyStates.transform) {
+                this._legacyStates.transform = new TransitionableTransform(this._output.transform);
+            }
+            if (!this._transformGetter) this.transformFrom(this._legacyStates.transform);
+
+            this._legacyStates.transform.set(transform, transition, callback);
+            return this;
+        }
+        else return this.transformFrom(transform);
+    };
+
+    /**
+     * Deprecated: Prefer opacityFrom with static opacity array, or use a Transitionable with that opacity.
+     * @deprecated
+     * @method setOpacity
+     *
+     * @param {Number} opacity Opacity value to transition to.
+     * @param {Transitionable} transition Valid transitionable object
+     * @param {Function} callback callback to call after transition completes
+     * @return {Modifier} this
+     */
+    Modifier.prototype.setOpacity = function setOpacity(opacity, transition, callback) {
+        if (transition || this._legacyStates.opacity) {
+            if (!this._legacyStates.opacity) {
+                this._legacyStates.opacity = new Transitionable(this._output.opacity);
+            }
+            if (!this._opacityGetter) this.opacityFrom(this._legacyStates.opacity);
+
+            return this._legacyStates.opacity.set(opacity, transition, callback);
+        }
+        else return this.opacityFrom(opacity);
+    };
+
+    /**
+     * Deprecated: Prefer originFrom with static origin array, or use a Transitionable with that origin.
+     * @deprecated
+     * @method setOrigin
+     *
+     * @param {Array.Number} origin two element array with values between 0 and 1.
+     * @param {Transitionable} transition Valid transitionable object
+     * @param {Function} callback callback to call after transition completes
+     * @return {Modifier} this
+     */
+    Modifier.prototype.setOrigin = function setOrigin(origin, transition, callback) {
+        /* TODO: remove this if statement when deprecation complete */
+        if (transition || this._legacyStates.origin) {
+
+            if (!this._legacyStates.origin) {
+                this._legacyStates.origin = new Transitionable(this._output.origin || [0, 0]);
+            }
+            if (!this._originGetter) this.originFrom(this._legacyStates.origin);
+
+            this._legacyStates.origin.set(origin, transition, callback);
+            return this;
+        }
+        else return this.originFrom(origin);
+    };
+
+    /**
+     * Deprecated: Prefer sizeFrom with static origin array, or use a Transitionable with that size.
+     * @deprecated
+     * @method setSize
+     * @param {Array.Number} size two element array of [width, height]
+     * @param {Transitionable} transition Valid transitionable object
+     * @param {Function} callback callback to call after transition completes
+     * @return {Modifier} this
+     */
+    Modifier.prototype.setSize = function setSize(size, transition, callback) {
+        if (size &amp;&amp; (transition || this._legacyStates.size)) {
+            if (!this._legacyStates.size) {
+                this._legacyStates.size = new Transitionable(this._output.size || [0, 0]);
+            }
+            if (!this._sizeGetter) this.sizeFrom(this._legacyStates.size);
+
+            this._legacyStates.size.set(size, transition, callback);
+            return this;
+        }
+        else return this.sizeFrom(size);
+    };
+
+    /**
+     * Deprecated: Prefer to stop transform in your provider object.
+     * @deprecated
+     * @method halt
+     */
+    Modifier.prototype.halt = function halt() {
+        if (this._legacyStates.transform) this._legacyStates.transform.halt();
+        if (this._legacyStates.opacity) this._legacyStates.opacity.halt();
+        if (this._legacyStates.origin) this._legacyStates.origin.halt();
+        if (this._legacyStates.size) this._legacyStates.size.halt();
+        this._transformGetter = null;
+        this._opacityGetter = null;
+        this._originGetter = null;
+        this._sizeGetter = null;
+    };
+
+    /**
+     * Deprecated: Prefer to use your provided transform or output of your transform provider.
+     * @deprecated
+     * @method getTransform
+     * @return {Object} transform provider object
+     */
+    Modifier.prototype.getTransform = function getTransform() {
+        return this._transformGetter();
+    };
+
+    /**
+     * Deprecated: Prefer to determine the end state of your transform from your transform provider
+     * @deprecated
+     * @method getFinalTransform
+     * @return {Transform} transform matrix
+     */
+    Modifier.prototype.getFinalTransform = function getFinalTransform() {
+        return this._legacyStates.transform ? this._legacyStates.transform.getFinal() : this._output.transform;
+    };
+
+    /**
+     * Deprecated: Prefer to use your provided opacity or output of your opacity provider.
+     * @deprecated
+     * @method getOpacity
+     * @return {Object} opacity provider object
+     */
+    Modifier.prototype.getOpacity = function getOpacity() {
+        return this._opacityGetter();
+    };
+    /**
+     * Deprecated: Prefer to use your provided origin or output of your origin provider.
+     * @deprecated
+     * @method getOrigin
+     * @return {Object} origin provider object
+     */
+    Modifier.prototype.getOrigin = function getOrigin() {
+        return this._originGetter();
+    };
+
+    /**
+     * Deprecated: Prefer to use your provided size or output of your size provider.
+     * @deprecated
+     * @method getSize
+     * @return {Object} size provider object
+     */
+    Modifier.prototype.getSize = function getSize() {
+        return this._sizeGetter ? this._sizeGetter() : this._output.size;
+    };
+
+    // call providers on tick to receive render spec elements to apply
+    function _update() {
+        if (this._transformGetter) this._output.transform = this._transformGetter();
+        if (this._opacityGetter) this._output.opacity = this._opacityGetter();
+        if (this._originGetter) this._output.origin = this._originGetter();
+        if (this._sizeGetter) this._output.size = this._sizeGetter();
+    }
+
+    /**
+     * Return render spec for this Modifier, applying to the provided
+     *    target component.  This is similar to render() for Surfaces.
+     *
+     * @private
+     * @method modify
+     *
+     * @param {Object} target (already rendered) render spec to
+     *    which to apply the transform.
+     * @return {Object} render spec for this Modifier, including the
+     *    provided target
+     */
+    Modifier.prototype.modify = function modify(target) {
+        _update.call(this);
+        this._output.target = target;
+        return this._output;
+    };
+
+    module.exports = Modifier;
+});
+
+    </pre>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>
